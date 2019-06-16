@@ -1,8 +1,7 @@
-$(document).ready(function(){
-    console.log("ready!");
-});
+$(document).ready(function () {
+  console.log("ready!");
 
-//firebase key configuration
+  //firebase key configuration
   var firebaseConfig = {
     apiKey: "AIzaSyDProkYgdjY3rTaaca5u9VipRAeaPKJnjE",
     authDomain: "video-search-5c1ee.firebaseapp.com",
@@ -14,3 +13,6 @@ $(document).ready(function(){
   };
   firebase.initializeApp(firebaseConfig);
   console.log("firebase");
+
+
+});
