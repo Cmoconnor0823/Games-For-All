@@ -17,14 +17,19 @@ $(document).ready(function () {
 
 });
 
+var userChoice = "portal"
+
+
 $("body").on("click", "#search", function () {
   console.log("Click")
 
-  axios.get("https://api-v3.igdb.com/games/", {
+  axios.get("https://chicken-coop.p.rapidapi.com/games/" + userChoice + "?platform=pc", {
     headers: {
       'Access-Control-Allow-Origin': 'https://www.igdb.com/oauth/authorize',
-      "user-key": "aa3e0b6b7fcfadd761e44c68eee3e3e0",
       
+       "X-RapidAPI-Host": "chicken-coop.p.rapidapi.com",
+      "X-RapidAPI-Key": "09840eae9fmsh29e1cf0c587e7d6p114d45jsnfbc066e65e3c",
+
       Accept: "application/json"
       
     }
@@ -39,9 +44,3 @@ $("body").on("click", "#search", function () {
 
 });
 
-$.ajax({
-  type: "POST",
-  beforeSend: function(request) {
-    request.setRequestHeader('Access-Control-Allow-Origin', 'https://www.igdb.com/oauth/authorize');
-  }
-});
