@@ -17,13 +17,15 @@ $(document).ready(function () {
 
 });
 
-var userChoice = "portal"
+var platform = "pc"
+
+var userChoice = "portal";
 
 
 $("body").on("click", "#search", function () {
   console.log("Click")
 
-  axios.get("https://chicken-coop.p.rapidapi.com/games/" + userChoice + "?platform=pc", {
+  axios.get("https://chicken-coop.p.rapidapi.com/games/" + userChoice + "?platform=" + platform, { {
     headers: {
       'Access-Control-Allow-Origin': 'https://www.igdb.com/oauth/authorize',
       
