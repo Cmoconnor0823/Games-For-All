@@ -73,7 +73,7 @@ $(document).on("click", "#pc", function () {
 
 
 $(document).on("click", "#nintendoSwitch", function () {
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=nintendo_switch&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=nintendo switch logo&limit=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -135,7 +135,7 @@ $(document).on("click", "#nintendoSwitch", function () {
 
 
 $(document).on("click", "#playstation4", function () {
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=playstation4&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=playstation4 logo&limit=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -196,7 +196,7 @@ $(document).on("click", "#playstation4", function () {
 
 
 $(document).on("click", "#xboxOne", function () {
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=xbox&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=xbox icon&limit=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -322,7 +322,7 @@ $(document).on("click", "#everyone", function () {
 
 $(document).on("click", "#teen", function () {
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=for_teen&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=teenage gamer&limit=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -510,7 +510,7 @@ $(document).on("click", "#adult", function () {
 
 $(document).on("click", "#fighting", function () {
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=fighting_game&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=fighting video game&limit=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -573,7 +573,7 @@ $(document).on("click", "#fighting", function () {
 
 $(document).on("click", "#puzzles", function () {
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=puzzles&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=puzzle computer game&limit=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -636,7 +636,7 @@ $(document).on("click", "#puzzles", function () {
 
 $(document).on("click", "#rolePlaying", function () {
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=roleplaying_game&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=roleplaying video game&limit=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -759,7 +759,7 @@ $(document).on("click", "#sport", function () {
 
 $(document).on("click", "#adventure", function () {
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=adventure_games&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=adventure video games&limit=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -821,7 +821,7 @@ $(document).on("click", "#adventure", function () {
 
 $(document).on("click", "#arcade", function () {
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=arcade_game&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=arcade video game&limit=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
