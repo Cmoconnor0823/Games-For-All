@@ -1,3 +1,7 @@
+
+
+
+
 $(document).ready(function () {
   console.log("ready!");
 
@@ -25,6 +29,9 @@ var userChoice = " ";
 
 $("body").on("click", "#search", function () {
   console.log("Click")
+  console.log(platformValue)
+  console.log(ratingValue)
+  console.log(genreValue)
   //   platform:
   // 	xbox one: 145
   // 	playstation  4: 146
