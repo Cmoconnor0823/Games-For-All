@@ -497,7 +497,7 @@ $(document).on("click", "#adult", function () {
         }
     });
 
-
+    $.ageCheck({minAge: minAge = 18}); 
 
     console.log($("#adult").text());
     searchFor.push($("#adult").text());
