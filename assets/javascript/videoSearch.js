@@ -78,7 +78,7 @@ $("body").on("click", "#search", function () {
     user_agent: 'ourtablebootcamp',
     // url: "https://www.giantbomb.com/games/?letter=&sortBy=&platform=145&genre=&theme=&minRating=&rating=&region=&___developers=&___publishers=&fromYear=&toYear=",
 
-    url: 'http://www.giantbomb.com/api/games/?format=jsonp&api_key=e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed8&filter=region:1,genre:9,rating:16,,platform:145,original_release_date:2010-1-1 00:00:00|2020-1-1 00:00:00&sort=original_release_date:asc&limit=10,',
+    url: 'http://www.giantbomb.com/api/games/?format=jsonp&api_key=e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed8&sortBy=release&filter=region:1&filter=genre:' + genreValue + '&filter=rating:' + ratingValue + '&filter=platform:'+ platformValue + '&filter= original_release_date:2010-1-1 00:00:00|2020-1-1 00:00:00&sort=original_release_date:asc&offset=10&results=10&limit=10,',
     //  url: 'http://api.giantbomb.com/api/search/?api_key=e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed8&format=jsonp' + '&resources=game' + '&filter=name:portal',
 
   }).done(function (response) {
