@@ -76,7 +76,10 @@ $("body").on("click", "#search", function () {
 
   }).done(function (response) {
     console.log(response.results)
-    var i = 0
+    var resultCount = response.results;
+
+    for(i=0; i < resultCount.length;i++){
+    
     var currentGame = response.results[i];
 
     console.log(response.results[i].image.medium_url)
@@ -97,20 +100,22 @@ $("body").on("click", "#search", function () {
     var rating = currentGame.original_game_rating;
     console.log(rating)
 
+    
+
     var cardDiv = $("<div>");
       cardDiv.addClass("card");
 
       var cardImage = $("<img>");
       cardImage.attr("class","card-image-top");
-      cardImage.attr("src",response.data.result.image);
+      cardImage.attr("src",image);
 
       var cardBody = $("<div>");
       cardBody.attr("class","card-body");
 
-      var cardTitle = $("<h5>").text(response.data.result.title);
+      var cardTitle = $("<h5>").text(name);
       cardTitle.attr("class","card-title");
 
-      var cardDescribe = $("<p>").text(response.data.result.description);
+      var cardDescribe = $("<p>").text(description);
       cardDescribe.attr("class","card-text");
 
       var cardFooter1 = $("<p>");
@@ -119,10 +124,10 @@ $("body").on("click", "#search", function () {
       var cardFooter2 = $("<p>");
       cardFooter2.attr("class","card-text");
 
-      var cardGenre = $("<small>").text(response.data.result.genre);
+      var cardGenre = $("<small>").text("genre");
       cardGenre.attr("class", "text-muted");
 
-      var cardScore = $("<small>").text("Score: " + response.data.result.score);
+      var cardScore = $("<small>").text("Score: " + rating);
       cardScore.attr("class", "text-muted");
 
       cardFooter1.append(cardGenre);
@@ -138,7 +143,7 @@ $("body").on("click", "#search", function () {
       cardDiv.append(cardBody);
 
       $("#card-deck").prepend(cardDiv);
-
+    }
 
     })
     .catch(e => {
@@ -169,7 +174,6 @@ $("body").on("click", "#search", function () {
 
 
   });
-});
 
 
 
