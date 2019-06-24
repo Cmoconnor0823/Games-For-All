@@ -8,6 +8,9 @@
     <!--Please anyone who knows which scripts are needed comment in a name for them-->
     <!--Css Reset Page-->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!--link to sassy generated css page-->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap-4.3.1-dist/css/style.css">
     <!--Is this the Bootstrap we need???-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -28,10 +31,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    
+
     <!-- link to button giphy button js-->
     <script src="assets/javascript/giphyButtons.js"></script>
-        <!--link to our js page-->
+    <!--link to our js page-->
     <script src="assets/javascript/videoSearch.js"></script>
     <title>Video Search</title>
 </head>
@@ -39,18 +42,20 @@
 <body>
 
 
-    <div class="mainShell">
-        <div class="container">
-            <div class="row">
-                <div class="jumbotron mainBox bg-secondary text-white m-3 p-2 col col-lg-12 text-center ">
-                    <header>
-                        <h1> Videogame Search Engine</h1>
-                        <h3>Use the drop-down menu choices to get a game recommendation</h3>
-                    </header>
+    <div id="mainShell">
+    <header id="headBar" class="container">
+        <div class="row">
+            <div class="jumbotron mainBox bg-secondary text-white m-3 p-2 col col-lg-12 text-center ">
+                <div>
+                    <h1> Videogame Search Engine</h1>
+                    <h3>Use the drop-down menu choices to get a game recommendation</h3>
                 </div>
             </div>
         </div>
+    </header>
 
+    <main>
+        <section id="gif">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="card bg-secondary border-danger text-white m-3 p-1 col col-lg-9" id="placeholderForGif">
@@ -64,7 +69,9 @@
                 </div>
             </div>
         </div>
+        </section>
 
+        <section id="menu">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="card bg-secondary border-danger m-3 p-1 col col-lg-10" id="placeholderForDropDownMenu">
@@ -124,11 +131,14 @@
                 </div>
             </div>
         </div>
+        </section>
+
+        <section id="cards">
 
         <div class="container">
             <div class="row">
                 <!--added an id class here to match the tiny difference from the card html file-->
-                <div class="card-deck" id="card-deck">
+                <div class="card-columns" id="card-deck">
                     <div class="card bg-secondary border-danger text-white m-3 p-1 col col-lg-4">
                         <div class="card-header" id="videoGameTitle">This is where the search result of the game title
                             should appear</div>
@@ -139,25 +149,7 @@
                         </div>
                     </div>
 
-                    <div class="card bg-secondary border-danger text-white m-3 p-1 col col-lg-4">
-                        <div class="card-header" id="videoGameTitle">This is where the search result of the game title
-                            should appear</div>
-                        <div class="card-body" id="videoGameInfo">
-                            This is where our search information should appear including an image of the game itself.
-                            we could also add a button here to search for more info or set that button to the generated
-                            image itself.
-                        </div>
-                    </div>
-
-                    <div class="card bg-secondary border-danger text-white m-3 p-1 col col-lg-4">
-                        <div class="card-header" id="videoGameTitle">This is where the search result of the game title
-                            should appear</div>
-                        <div class="card-body" id="videoGameInfo">
-                            This is where our search information should appear including an image of the game itself.
-                            we could also add a button here to search for more info or set that button to the generated
-                            image itself.
-                        </div>
-                    </div>
+                
 
                 </div>
             </div>
@@ -165,6 +157,8 @@
 
 
 
-    </div>
-
+    </main>
+</div>
 </body>
+
+</html>
