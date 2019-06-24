@@ -1,3 +1,7 @@
+
+
+
+
 $(document).ready(function () {
   console.log("ready!");
 
@@ -17,46 +21,108 @@ $(document).ready(function () {
 
 });
 
-var userChoice = "portal"
+var platform = "pc"
 
+var userChoice = " ";
+// + userChoice + "?platform=" + platform 
+//api_key=[e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed8
 
 $("body").on("click", "#search", function () {
   console.log("Click")
+  console.log(platformValue)
+  console.log(ratingValue)
+  console.log(genreValue)
+  //   platform:
+  // 	xbox one: 145
+  // 	playstation  4: 146
+  // 	nintendo switch: 157
+  // 	pc: 94
 
-  axios.get("https://chicken-coop.p.rapidapi.com/games/" + userChoice + "?platform=pc", {
-    headers: {
-      'Access-Control-Allow-Origin': 'https://www.igdb.com/oauth/authorize',
-      
-       "X-RapidAPI-Host": "chicken-coop.p.rapidapi.com",
-      "X-RapidAPI-Key": "09840eae9fmsh29e1cf0c587e7d6p114d45jsnfbc066e65e3c",
+  // rating:
+  // 	E : 6
+  // 	e 10+:29
+  // 	teen: 1
+  // 	mature: 16
+  // 	AO: 23
 
-      Accept: "application/json"
-      
-    }
-  })
-    .then(response => {
-      // Do work here
-      console.log(response.data);
-      console.log(response.data.result.title);
-      console.log(response.data.result.description);
-      console.log(response.data.result.image);
-      console.log(response.data.result.genre);
-      console.log(response.data.result.score);
+  // genre:
+  // 	role playing: 5
+  // 	fighting: 9
+  // 	sport: 3
+  // 	adventure:43
+  // 	puzzle: 18
+  // 	arcade: n/a
+  // axios.get("http://www.giantbomb.com/api/games/?format=jsonp&api_key=e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed84&filter=region:1,genre:9,rating:16,,platform:145,original_release_date:2010-1-1 00:00:00|2020-1-1 00:00:00&sort=original_release_date:asc&limit=10," , {
+  //   dataType: "jsonp",
+  //   crossDomain: true,
+  //   user_agent: 'ourtablebootcamp',
 
-      var cardDiv = $("<div>");
+  //                   jsonp: 'json_callback',
+  //   //                 data: {
+  //   //                     api_key: '[e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed8]',
+  //   //                     query: 'mass effect',
+  //   //                     format: 'jsonp',
+  //   //                     field_list: 'name'
+
+  //   // }
+  // })    .then(response => {
+  //   // Do work here
+  //   console.log(response)
+  // });
+
+  $.ajax({
+    type: 'GET',
+    dataType: 'jsonp',
+    crossDomain: true,
+    jsonp: 'json_callback',
+    user_agent: 'ourtablebootcamp',
+    // url: "https://www.giantbomb.com/games/?letter=&sortBy=&platform=145&genre=&theme=&minRating=&rating=&region=&___developers=&___publishers=&fromYear=&toYear=",
+
+    url: 'http://www.giantbomb.com/api/games/?format=jsonp&api_key=e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed8&sortBy=release&filter=region:1&filter=genre:' + genreValue + '&filter=rating:' + ratingValue + '&filter=platform:'+ platformValue + '&filter= original_release_date:2010-1-1 00:00:00|2020-1-1 00:00:00&sort=original_release_date:asc&offset=10&results=10&limit=10,',
+    //  url: 'http://api.giantbomb.com/api/search/?api_key=e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed8&format=jsonp' + '&resources=game' + '&filter=name:portal',
+
+  }).done(function (response) {
+    console.log(response.results)
+    var resultCount = response.results;
+
+    for(i=0; i < resultCount.length;i++){
+    
+    var currentGame = response.results[i];
+
+    console.log(response.results[i].image.medium_url)
+    console.log(response.results[i].description)
+    console.log(response.results[i].name)
+    console.log(response.results[i].original_game_rating)
+
+
+    var image = currentGame.image.medium_url;
+    console.log(image)
+
+    var description = currentGame.description;
+    console.log(description)
+
+    var name = currentGame.name
+    console.log(name)
+
+    var rating = currentGame.original_game_rating;
+    console.log(rating)
+
+    
+
+    var cardDiv = $("<div>");
       cardDiv.addClass("card");
 
       var cardImage = $("<img>");
       cardImage.attr("class","card-image-top");
-      cardImage.attr("src",response.data.result.image);
+      cardImage.attr("src",image);
 
       var cardBody = $("<div>");
       cardBody.attr("class","card-body");
 
-      var cardTitle = $("<h5>").text(response.data.result.title);
+      var cardTitle = $("<h5>").text(name);
       cardTitle.attr("class","card-title");
 
-      var cardDescribe = $("<p>").text(response.data.result.description);
+      var cardDescribe = $("<p>").text(description);
       cardDescribe.attr("class","card-text");
 
       var cardFooter1 = $("<p>");
@@ -65,16 +131,16 @@ $("body").on("click", "#search", function () {
       var cardFooter2 = $("<p>");
       cardFooter2.attr("class","card-text");
 
-      var cardGenre = $("<small>").text(response.data.result.genre);
+      var cardGenre = $("<small>").text("genre");
       cardGenre.attr("class", "text-muted");
 
-      var cardScore = $("<small>").text("Score: " + response.data.result.score);
+      var cardScore = $("<small>").text("Score: " + rating);
       cardScore.attr("class", "text-muted");
 
       cardFooter1.append(cardGenre);
 
       cardFooter2.append(cardScore);
-      
+
       cardBody.append(cardTitle);
       cardBody.append(cardDescribe);
       cardBody.append(cardFooter1);
@@ -84,12 +150,70 @@ $("body").on("click", "#search", function () {
       cardDiv.append(cardBody);
 
       $("#card-deck").prepend(cardDiv);
-      
-      
+    }
+
     })
     .catch(e => {
       console.log("error", e);
     });
 
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  });
+
+
+
+
+
+
+
+//   $.ajax({
+//     url: "http://api.giantbomb.com/search/",
+//     dataType: "jsonp",
+//     jsonp: 'json_callback',
+//     data: {
+//         api_key: '[e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed8]',
+//         query: 'mass effect',
+//         format: 'jsonp',
+//         field_list: 'name'
+//     },
+//     success: function(res) {
+//         console.log(res);
+//     }
+// });
+// });
+
+
+
+//       console.log(response.data);
+//       console.log(response.data.result.title);
+//       console.log(response.data.result.description);
+//       console.log(response.data.result.image);
+//       console.log(response.data.result.genre);
+//       console.log(response.data.result.score);
+
+      
+
+// });
 
