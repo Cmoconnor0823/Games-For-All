@@ -35,6 +35,12 @@ body{
 #gif{
     z-index: 1;
     position: relative;
+    background-color: map-get($mycolors, secondary);
+    width: 60%;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #F2F2F2;
+    border-radius: 50px;
 }
 #menu{
     z-index: 1;
