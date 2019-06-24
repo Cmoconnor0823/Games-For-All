@@ -115,6 +115,7 @@ $("body").on("click", "#search", function () {
       var cardImage = $("<img>");
       cardImage.attr("class","card-image-top");
       cardImage.attr("src",image);
+      cardImage.attr("id","imageSize")
 
       var cardBody = $("<div>");
       cardBody.attr("class","card-body");
@@ -132,10 +133,10 @@ $("body").on("click", "#search", function () {
       cardFooter2.attr("class","card-text");
 
       var cardGenre = $("<small>").text("genre");
-      cardGenre.attr("class", "text-muted");
+      cardGenre.attr("class", "text-light");
 
       var cardScore = $("<small>").text("Score: " + rating);
-      cardScore.attr("class", "text-muted");
+      cardScore.attr("class", "text-light");
 
       cardFooter1.append(cardGenre);
 
