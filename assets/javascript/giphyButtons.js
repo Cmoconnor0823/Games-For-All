@@ -29,6 +29,7 @@ $(document).on("click", "#pc", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            givDiv.attr("class","card-body");
             // Creating an image tag
             var pcImage = $("<img>");
 
@@ -40,11 +41,17 @@ $(document).on("click", "#pc", function () {
             pcImage.attr("data-animate", results[0].images.fixed_height.url);
             pcImage.attr("data-type", "still");
             pcImage.attr("class", "gif");
+            pcImage.attr("class","card-image-top")
+
+            var pcGifTitle = $("<h5>");
+            pcGifTitle.attr("class","card-title");
+            pcGifTitle.text("PC");
 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(pcImage);
+            gifDiv.append(pcGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
             $("#platform-gifs-appear-here").prepend(gifDiv);
 
@@ -94,6 +101,7 @@ $(document).on("click", "#nintendoSwitch", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            givDiv.attr("class","card-body");
             // Creating an image tag
             var nswitchImage = $("<img>");
 
@@ -105,11 +113,17 @@ $(document).on("click", "#nintendoSwitch", function () {
             nswitchImage.attr("data-animate", results[0].images.fixed_height.url);
             nswitchImage.attr("data-type", "still");
             nswitchImage.attr("class", "gif");
+            nswitchImage.attr("class", "card-image-top");
+
+            var nswitchGifTitle = $("<h5>");
+            nswitchGifTitle.attr("class","card-title");
+            nswitchGifTitle.text("Nintendo Switch"); 
 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(nswitchImage);
+            gifDiv.append(nswitchGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
             $("#platform-gifs-appear-here").prepend(gifDiv);
 
@@ -155,6 +169,7 @@ $(document).on("click", "#playstation4", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            givDiv.attr("class","card-body"); 
             // Creating an image tag
             var play4Image = $("<img>");
 
@@ -166,11 +181,17 @@ $(document).on("click", "#playstation4", function () {
             play4Image.attr("data-animate", results[0].images.fixed_height.url);
             play4Image.attr("data-type", "still");
             play4Image.attr("class", "gif");
+            play4Image.attr("class", "card-image-top");
+
+            var play4GifTitle = $("<h5>");
+            play4GifTitle.attr("class","card-title");
+            play4GifTitle.text("Playstation 4"); 
 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(play4Image);
+            gifDiv.append(play4GifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
             $("#platform-gifs-appear-here").prepend(gifDiv);
 
@@ -217,6 +238,7 @@ $(document).on("click", "#xboxOne", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            givDiv.attr("class","card-body"); 
             // Creating an image tag
             var xboxImage = $("<img>");
 
@@ -228,11 +250,17 @@ $(document).on("click", "#xboxOne", function () {
             xboxImage.attr("data-animate", results[0].images.fixed_height.url);
             xboxImage.attr("data-type", "still");
             xboxImage.attr("class", "gif");
+            xboxImage.attr("class", "card-image-top");
+
+            var xboxGifTitle = $("<h5>");
+            xboxGifTitle.attr("class","card-title");
+            xboxGifTitle.text("Xbox One"); 
 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(xboxImage);
+            gifDiv.append(xboxGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
             $("#platform-gifs-appear-here").prepend(gifDiv);
 
@@ -282,6 +310,7 @@ $(document).on("click", "#everyone", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            givDiv.attr("class","card-body"); 
             // Creating an image tag
             var everyoneImage = $("<img>");
 
@@ -293,11 +322,17 @@ $(document).on("click", "#everyone", function () {
             everyoneImage.attr("data-animate", results[0].images.fixed_height.url);
             everyoneImage.attr("data-type", "still");
             everyoneImage.attr("class", "gif");
+            everyoneImage.attr("class", "card-image-top");
+
+            var everyoneGifTitle = $("<h5>");
+            everyoneGifTitle.attr("class","title");
+            everyoneGifTitle.text("For All Ages"); 
 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(everyoneImage);
+            gifDiv.append(everyoneGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
             $("#age-gifs-appear-here").prepend(gifDiv);
 
@@ -346,6 +381,7 @@ $(document).on("click", "#teen", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            givDiv.attr("class", "card-body");
             // Creating an image tag
             var teenImage = $("<img>");
 
@@ -357,7 +393,11 @@ $(document).on("click", "#teen", function () {
             teenImage.attr("data-animate", results[0].images.fixed_height.url);
             teenImage.attr("data-type", "still");
             teenImage.attr("class", "gif");
+            teenImage.attr("class", "card-image-top");
 
+            var teenImageGifTitle = $("<h5>");
+            teenImageGifTitle.attr("class","title");
+            teenImageGifTitle.text("Teen"); 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
