@@ -51,7 +51,7 @@ $("body").on("click", "#search", function () {
   
   
   
-    var queryUrl = 'http://www.giantbomb.com/api/games/?format=jsonp&api_key=e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed8&letter=&sortBy=release&filter=original_release_date:2019-01-01%2000:00:00|2020-12-31%2023:59:59,expected_release_year:2019&offset=0&region=1&minRating=4&genre=' + genreValue + '&rating=' + ratingValue + '&platform='+ platformValue + '&limit=10,&field_list=genres,name,description,rating,image'
+    var queryUrl = 'http://www.giantbomb.com/api/games/?format=jsonp&api_key=e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed8&letter=&sortBy=release&filter=original_release_date:2019-01-01%2000:00:00|2020-12-31%2023:59:59,expected_release_year:2019&offset=100&region=1&minRating=4&genre=' + genreValue + '&rating=' + ratingValue + '&platform='+ platformValue + '&limit=10,&field_list=genres,name,description,rating,image'
 
 
   console.log(queryUrl)
