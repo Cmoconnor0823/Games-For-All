@@ -87,7 +87,7 @@ $("body").on("click", "#search", function () {
 
 
     var image = currentGame.image.small_url;
-    console.log(image = +"image")
+    console.log("image" + image)
 
     var description = currentGame.description;
     console.log(description +" description")
