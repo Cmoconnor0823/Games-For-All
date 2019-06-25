@@ -14,7 +14,7 @@ var searchFor = [];
 $(document).on("click", "#pc", function () {
     platformValue = 94;
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=pc&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=computer game logo=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -35,9 +35,9 @@ $(document).on("click", "#pc", function () {
             // Giving the image tag an src attribute of a proprty pulled off the
             // result item
 
-            pcImage.attr("src", results[7].images.fixed_height_still.url);
-            pcImage.attr("data-still", results[7].images.fixed_height_still.url);
-            pcImage.attr("data-animate", results[7].images.fixed_height.url);
+            pcImage.attr("src", results[0].images.fixed_height_still.url);
+            pcImage.attr("data-still", results[0].images.fixed_height_still.url);
+            pcImage.attr("data-animate", results[0].images.fixed_height.url);
             pcImage.attr("data-type", "still");
             pcImage.attr("class", "gif");
 
@@ -78,8 +78,11 @@ $(document).on("click", "#pc", function () {
 
 
 $(document).on("click", "#nintendoSwitch", function () {
+
     platformValue = 157;
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=nintendo_switch&limit=10&offset=0&rating=G&lang=en";
+
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=nintendo switch device&limit=10&offset=0&rating=G&lang=en";
+
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -100,9 +103,9 @@ $(document).on("click", "#nintendoSwitch", function () {
             // Giving the image tag an src attribute of a proprty pulled off the
             // result item
 
-            nswitchImage.attr("src", results[2].images.fixed_height_still.url);
-            nswitchImage.attr("data-still", results[2].images.fixed_height_still.url);
-            nswitchImage.attr("data-animate", results[2].images.fixed_height.url);
+            nswitchImage.attr("src", results[0].images.fixed_height_still.url);
+            nswitchImage.attr("data-still", results[0].images.fixed_height_still.url);
+            nswitchImage.attr("data-animate", results[0].images.fixed_height.url);
             nswitchImage.attr("data-type", "still");
             nswitchImage.attr("class", "gif");
 
@@ -141,11 +144,10 @@ $(document).on("click", "#nintendoSwitch", function () {
 
 
 $(document).on("click", "#playstation4", function () {
-    platformValue = 146;
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=playstation4&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=playstation controler&limit=10&offset=0&rating=G&lang=en";
+
     console.log(queryURL);
-    // Performing our AJAX GET request
     $.ajax({
         url: queryURL,
         method: "GET"
@@ -164,9 +166,9 @@ $(document).on("click", "#playstation4", function () {
             // Giving the image tag an src attribute of a proprty pulled off the
             // result item
 
-            play4Image.attr("src", results[3].images.fixed_height_still.url);
-            play4Image.attr("data-still", results[3].images.fixed_height_still.url);
-            play4Image.attr("data-animate", results[3].images.fixed_height.url);
+            play4Image.attr("src", results[0].images.fixed_height_still.url);
+            play4Image.attr("data-still", results[0].images.fixed_height_still.url);
+            play4Image.attr("data-animate", results[0].images.fixed_height.url);
             play4Image.attr("data-type", "still");
             play4Image.attr("class", "gif");
 
@@ -204,8 +206,11 @@ $(document).on("click", "#playstation4", function () {
 
 
 $(document).on("click", "#xboxOne", function () {
+
     platformValue = 145;
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=xbox&limit=10&offset=0&rating=G&lang=en";
+
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=xbox=10&offset=0&rating=G&lang=en";
+
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -226,9 +231,9 @@ $(document).on("click", "#xboxOne", function () {
             // Giving the image tag an src attribute of a proprty pulled off the
             // result item
 
-            xboxImage.attr("src", results[3].images.fixed_height_still.url);
-            xboxImage.attr("data-still", results[3].images.fixed_height_still.url);
-            xboxImage.attr("data-animate", results[3].images.fixed_height.url);
+            xboxImage.attr("src", results[0].images.fixed_height_still.url);
+            xboxImage.attr("data-still", results[0].images.fixed_height_still.url);
+            xboxImage.attr("data-animate", results[0].images.fixed_height.url);
             xboxImage.attr("data-type", "still");
             xboxImage.attr("class", "gif");
 
@@ -270,7 +275,7 @@ $(document).on("click", "#xboxOne", function () {
 $(document).on("click", "#everyone", function () {
     ratingValue = 6;
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=for_everyone&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=no age limit&limit=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -291,9 +296,9 @@ $(document).on("click", "#everyone", function () {
             // Giving the image tag an src attribute of a proprty pulled off the
             // result item
 
-            everyoneImage.attr("src", results[4].images.fixed_height_still.url);
-            everyoneImage.attr("data-still", results[4].images.fixed_height_still.url);
-            everyoneImage.attr("data-animate", results[4].images.fixed_height.url);
+            everyoneImage.attr("src", results[0].images.fixed_height_still.url);
+            everyoneImage.attr("data-still", results[0].images.fixed_height_still.url);
+            everyoneImage.attr("data-animate", results[0].images.fixed_height.url);
             everyoneImage.attr("data-type", "still");
             everyoneImage.attr("class", "gif");
 
@@ -332,9 +337,12 @@ $(document).on("click", "#everyone", function () {
 
 $(document).on("click", "#teen", function () {
 
+
     ratingValue = 1;
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=for_teen&limit=10&offset=0&rating=G&lang=en";
+
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=teen video gamer&limit=10&offset=0&rating=G&lang=en";
+
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -355,9 +363,9 @@ $(document).on("click", "#teen", function () {
             // Giving the image tag an src attribute of a proprty pulled off the
             // result item
 
-            teenImage.attr("src", results[3].images.fixed_height_still.url);
-            teenImage.attr("data-still", results[3].images.fixed_height_still.url);
-            teenImage.attr("data-animate", results[3].images.fixed_height.url);
+            teenImage.attr("src", results[0].images.fixed_height_still.url);
+            teenImage.attr("data-still", results[0].images.fixed_height_still.url);
+            teenImage.attr("data-animate", results[0].images.fixed_height.url);
             teenImage.attr("data-type", "still");
             teenImage.attr("class", "gif");
 
@@ -396,7 +404,7 @@ $(document).on("click", "#teen", function () {
 
 $(document).on("click", "#mature", function () {
     ratingValue = 16;
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=for_mature_audience&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=mature&limit=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -417,9 +425,9 @@ $(document).on("click", "#mature", function () {
             // Giving the image tag an src attribute of a proprty pulled off the
             // result item
 
-            matureImage.attr("src", results[2].images.fixed_height_still.url);
-            matureImage.attr("data-still", results[2].images.fixed_height_still.url);
-            matureImage.attr("data-animate", results[2].images.fixed_height.url);
+            matureImage.attr("src", results[0].images.fixed_height_still.url);
+            matureImage.attr("data-still", results[0].images.fixed_height_still.url);
+            matureImage.attr("data-animate", results[0].images.fixed_height.url);
             matureImage.attr("data-type", "still");
             matureImage.attr("class", "gif");
 
@@ -458,7 +466,7 @@ $(document).on("click", "#mature", function () {
 
 $(document).on("click", "#adult", function () {
     ratingValue = 23;
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=adult_only&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=adult&limit=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -509,7 +517,7 @@ $(document).on("click", "#adult", function () {
         }
     });
 
-
+    $.ageCheck({minAge: minAge = 18}); 
 
     console.log($("#adult").text());
     searchFor.push($("#adult").text());
@@ -521,8 +529,11 @@ $(document).on("click", "#adult", function () {
 
 
 $(document).on("click", "#fighting", function () {
+
     genreValue = 9;
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=fighting_game&limit=10&offset=0&rating=G&lang=en";
+
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=video_game fighting&limit=10&offset=0&rating=G&lang=en";
+
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -543,9 +554,9 @@ $(document).on("click", "#fighting", function () {
             // Giving the image tag an src attribute of a proprty pulled off the
             // result item
 
-            fightImage.attr("src", results[9].images.fixed_height_still.url);
-            fightImage.attr("data-still", results[9].images.fixed_height_still.url);
-            fightImage.attr("data-animate", results[9].images.fixed_height.url);
+            fightImage.attr("src", results[0].images.fixed_height_still.url);
+            fightImage.attr("data-still", results[0].images.fixed_height_still.url);
+            fightImage.attr("data-animate", results[0].images.fixed_height.url);
             fightImage.attr("data-type", "still");
             fightImage.attr("class", "gif");
 
@@ -584,8 +595,11 @@ $(document).on("click", "#fighting", function () {
 
 
 $(document).on("click", "#puzzles", function () {
+
     genreValue = 18;
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=puzzles&limit=10&offset=0&rating=G&lang=en";
+
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=video_game puzzles&limit=10&offset=0&rating=G&lang=en";
+
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -606,9 +620,9 @@ $(document).on("click", "#puzzles", function () {
             // Giving the image tag an src attribute of a proprty pulled off the
             // result item
 
-            puzzleImage.attr("src", results[7].images.fixed_height_still.url);
-            puzzleImage.attr("data-still", results[7].images.fixed_height_still.url);
-            puzzleImage.attr("data-animate", results[7].images.fixed_height.url);
+            puzzleImage.attr("src", results[0].images.fixed_height_still.url);
+            puzzleImage.attr("data-still", results[0].images.fixed_height_still.url);
+            puzzleImage.attr("data-animate", results[0].images.fixed_height.url);
             puzzleImage.attr("data-type", "still");
             puzzleImage.attr("class", "gif");
 
@@ -647,8 +661,11 @@ $(document).on("click", "#puzzles", function () {
 
 
 $(document).on("click", "#rolePlaying", function () {
+
     genreValue = 5;
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=roleplaying_game&limit=10&offset=0&rating=G&lang=en";
+
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=video games dungeons and dragons&limit=10&offset=0&rating=G&lang=en";
+
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -710,7 +727,7 @@ $(document).on("click", "#rolePlaying", function () {
 
 $(document).on("click", "#sport", function () {
     genreValue = 3;
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=sports_video_games&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=sports video games&limit=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -770,8 +787,11 @@ $(document).on("click", "#sport", function () {
 
 
 $(document).on("click", "#adventure", function () {
+
     genreValue = 43;
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=adventure_games&limit=10&offset=0&rating=G&lang=en";
+
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=adventure video games&limit=10&offset=0&rating=G&lang=en";
+
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -792,9 +812,9 @@ $(document).on("click", "#adventure", function () {
             // Giving the image tag an src attribute of a proprty pulled off the
             // result item
 
-            adventureImage.attr("src", results[1].images.fixed_height_still.url);
-            adventureImage.attr("data-still", results[1].images.fixed_height_still.url);
-            adventureImage.attr("data-animate", results[1].images.fixed_height.url);
+            adventureImage.attr("src", results[0].images.fixed_height_still.url);
+            adventureImage.attr("data-still", results[0].images.fixed_height_still.url);
+            adventureImage.attr("data-animate", results[0].images.fixed_height.url);
             adventureImage.attr("data-type", "still");
             adventureImage.attr("class", "gif");
 
@@ -832,8 +852,11 @@ $(document).on("click", "#adventure", function () {
 
 
 $(document).on("click", "#arcade", function () {
+
+
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=arcade style video game&limit=10&offset=0&rating=G&lang=en";
     genreValue = "";
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=arcade_game&limit=10&offset=0&rating=G&lang=en";
+
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
