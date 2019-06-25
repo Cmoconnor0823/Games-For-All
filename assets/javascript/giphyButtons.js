@@ -29,7 +29,7 @@ $(document).on("click", "#pc", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
-            givDiv.attr("class","card-body");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var pcImage = $("<img>");
 
@@ -53,7 +53,7 @@ $(document).on("click", "#pc", function () {
             gifDiv.append(pcImage);
             gifDiv.append(pcGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#platform-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -101,7 +101,7 @@ $(document).on("click", "#nintendoSwitch", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
-            givDiv.attr("class","card-body");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var nswitchImage = $("<img>");
 
@@ -125,7 +125,7 @@ $(document).on("click", "#nintendoSwitch", function () {
             gifDiv.append(nswitchImage);
             gifDiv.append(nswitchGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#platform-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -169,7 +169,7 @@ $(document).on("click", "#playstation4", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
-            givDiv.attr("class","card-body"); 
+            gifDiv.attr("class","card-body"); 
             // Creating an image tag
             var play4Image = $("<img>");
 
@@ -193,7 +193,7 @@ $(document).on("click", "#playstation4", function () {
             gifDiv.append(play4Image);
             gifDiv.append(play4GifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#platform-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -238,7 +238,7 @@ $(document).on("click", "#xboxOne", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
-            givDiv.attr("class","card-body"); 
+            gifDiv.attr("class","card-body"); 
             // Creating an image tag
             var xboxImage = $("<img>");
 
@@ -262,7 +262,7 @@ $(document).on("click", "#xboxOne", function () {
             gifDiv.append(xboxImage);
             gifDiv.append(xboxGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#platform-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -310,7 +310,7 @@ $(document).on("click", "#everyone", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
-            givDiv.attr("class","card-body"); 
+            gifDiv.attr("class","card-body"); 
             // Creating an image tag
             var everyoneImage = $("<img>");
 
@@ -334,7 +334,7 @@ $(document).on("click", "#everyone", function () {
             gifDiv.append(everyoneImage);
             gifDiv.append(everyoneGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#age-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -381,7 +381,7 @@ $(document).on("click", "#teen", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
-            givDiv.attr("class", "card-body");
+            gifDiv.attr("class", "card-body");
             // Creating an image tag
             var teenImage = $("<img>");
 
@@ -402,8 +402,9 @@ $(document).on("click", "#teen", function () {
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(teenImage);
+            gifDiv.append(teenImageGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#age-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -448,6 +449,7 @@ $(document).on("click", "#mature", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var matureImage = $("<img>");
 
@@ -459,13 +461,19 @@ $(document).on("click", "#mature", function () {
             matureImage.attr("data-animate", results[0].images.fixed_height.url);
             matureImage.attr("data-type", "still");
             matureImage.attr("class", "gif");
+            matureImage.attr("class","card-image-top");
+
+            var matureImageGifTitle = $("<h5>");
+            matureImageGifTitle.attr("class","title");
+            matureImageGifTitle.text("Teen"); 
 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(matureImage);
+            gifDiv.append(matureImageGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#age-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -510,6 +518,7 @@ $(document).on("click", "#adult", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var adultImage = $("<img>");
 
@@ -521,13 +530,18 @@ $(document).on("click", "#adult", function () {
             adultImage.attr("data-animate", results[0].images.fixed_height.url);
             adultImage.attr("data-type", "still");
             adultImage.attr("class", "gif");
+            adultImage.attr("class","card-image-top");
 
+            var adultImageGifTitle = $("<h5>");
+            adultImageGifTitle.attr("class","title");
+            adultImageGifTitle.text("Adult"); 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(adultImage);
+            gifDiv.append(adultImageGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#age-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -574,6 +588,7 @@ $(document).on("click", "#fighting", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var fightImage = $("<img>");
 
@@ -585,13 +600,19 @@ $(document).on("click", "#fighting", function () {
             fightImage.attr("data-animate", results[0].images.fixed_height.url);
             fightImage.attr("data-type", "still");
             fightImage.attr("class", "gif");
+            fightImage.attr("class", "card-image-top");
+
+            var fightImageGifTitle = $("<h5>");
+            fightImageGifTitle.attr("class","title");
+            fightImageGifTitle.text("Fighting Games"); 
 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(fightImage);
+            gifDiv.append(fightImageGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#genre-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -637,6 +658,7 @@ $(document).on("click", "#puzzles", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class", "card-body");
             // Creating an image tag
             var puzzleImage = $("<img>");
 
@@ -648,13 +670,15 @@ $(document).on("click", "#puzzles", function () {
             puzzleImage.attr("data-animate", results[0].images.fixed_height.url);
             puzzleImage.attr("data-type", "still");
             puzzleImage.attr("class", "gif");
+            puzzleImage.attr("class", "card-image-top");
 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(puzzleImage);
+            gifDiv.append(puzzleImage);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#genre-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -700,6 +724,7 @@ $(document).on("click", "#rolePlaying", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var roleImage = $("<img>");
 
@@ -711,13 +736,19 @@ $(document).on("click", "#rolePlaying", function () {
             roleImage.attr("data-animate", results[0].images.fixed_height.url);
             roleImage.attr("data-type", "still");
             roleImage.attr("class", "gif");
+            roleImage.attr("class", "card-image-top");
+
+            var roleImageGifTitle = $("<h5>");
+            roleImageGifTitle.attr("class","title");
+            roleImageGifTitle.text("Roleplaying Games"); 
 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(roleImage);
+            gifDiv.append(roleImageGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#genre-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -762,6 +793,7 @@ $(document).on("click", "#sport", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var sportsImage = $("<img>");
 
@@ -773,13 +805,19 @@ $(document).on("click", "#sport", function () {
             sportsImage.attr("data-animate", results[0].images.fixed_height.url);
             sportsImage.attr("data-type", "still");
             sportsImage.attr("class", "gif");
+            sportsImage.attr("class", "card-image-top");
+
+            var sportsImageGifTitle = $("<h5>");
+            sportsImageGifTitle.attr("class","title");
+            sportsImageGifTitle.text("Video Sports"); 
 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(sportsImage);
+            givDiv.append(sportsImageGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#genre-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -823,6 +861,7 @@ $(document).on("click", "#adventure", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var adventureImage = $("<img>");
 
@@ -834,13 +873,18 @@ $(document).on("click", "#adventure", function () {
             adventureImage.attr("data-animate", results[0].images.fixed_height.url);
             adventureImage.attr("data-type", "still");
             adventureImage.attr("class", "gif");
+            adventureImage.attr("class", "card-image-top");
 
+            var adventureImageGifTitle = $("<h5>");
+            adventureImageGifTitle.attr("class","title");
+            adventureImageGifTitle.text("Adventure Games"); 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(adventureImage);
+            gifDiv.append(adventureImageGifTitle)
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#genre-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -886,6 +930,7 @@ $(document).on("click", "#arcade", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var arcadeImage = $("<img>");
 
@@ -897,13 +942,18 @@ $(document).on("click", "#arcade", function () {
             arcadeImage.attr("data-animate", results[0].images.fixed_height.url);
             arcadeImage.attr("data-type", "still");
             arcadeImage.attr("class", "gif");
+            arcadeImage.attr("class","card-image-top");
 
+            var arcadeImageGifTitle = $("<h5>");
+            arcadeImageGifTitle.attr("class","title");
+            arcadeImageGifTitle.text("Teen"); 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(arcadeImage);
+            gifDiv.append(arcadeImageGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#genre-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
