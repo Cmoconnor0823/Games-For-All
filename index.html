@@ -24,7 +24,8 @@
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
     <!--JQuery call-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
-        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>;
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+
     <!--below this line we had a conflict merge and there may be an excess bootstrap call-->
     <!--Axios Call-->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -37,10 +38,10 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <!-- link to button giphy button js-->
-    <script src="assets/javascript/giphyButtons.js"></script>
-    <!--link to our js page-->
-    <script src="assets/javascript/videoSearch.js"></script>
+        <!--link to our js page-->
+        <script src="assets/javascript/videoSearch.js"></script>
+        <!-- link to button giphy button js-->
+        <script src="assets/javascript/giphyButtons.js"></script>
     <!-- link to js for pop-up age verification plug-in-->
     <script
         src="assets/Html5-sessionStorage-Based-Age-Verification-with-jQuery-Age-Check/dist/jquery.agecheck-min.js"></script>
@@ -49,18 +50,17 @@
 
 <body>
 
-    <div id="mainShell">
-
-        <header id="headBar" class="container">
-            <div class="row">
-                <div class="jumbotron mainBox bg-secondary text-white m-3 p-2 col col-lg-12 text-center ">
-                    <div>
-                        <h1> Videogame Search Engine</h1>
-                        <h3>Use the drop-down menu choices to get a game recommendation</h3>
-                    </div>
-                </div>
-            </div>
-        </header>
+    
+        <section id="headBar">
+            <header id="headBar" class="container">
+                <div class="row">
+                    <div class="jumbotron mainBox bg-secondary text-white m-3 p-2 col col-lg-12 text-center ">
+                        <div>
+                            <h1> Videogame Search Engine</h1>
+                            <h3> Use this site to get a customized video game reccomendation</h3>
+                        </div>
+            </header>
+        </section>
 
 
 
@@ -72,7 +72,7 @@
                         <div class="card bg-secondary border-danger text-white m-3 p-1 col col-lg-9"
                             id="placeholderForGif">
                             <div class="card-body m-3 p-1">
-                                <p>This is where the console gif should appear.</p>
+                                <p>Here's a gif showing what your searching for!</p>
                                 <div id="age-gifs-appear-here"></div>
                                 <div id="platform-gifs-appear-here"></div>
                                 <div id="genre-gifs-appear-here"></div>
@@ -84,12 +84,12 @@
                 </div>
             </div>
         </section>
-        <section id="menu" class="container"></section>
+        <section id="menu" class="container">
 
         <div class="container">
             <div class="row justify-content-center">
                 <div class="card bg-secondary border-danger m-3 p-1 col col-lg-10" id="placeholderForDropDownMenu">
-                    <div class="card-header text-white"> Here is where the drop down menu buttons will appear</div>
+                    <div class="card-header text-white">Use the drop-down menu choices to get a game recommendation</div>
                     <div class="card-body text-white">
                         <div class="btn-group">
                             <button id="ageRange" class="btn btn-secondary btn-lg dropdown-toggle" type="button"
@@ -143,13 +143,14 @@
                                         <button id="arcade" class="dropdown-item" type="button"
                                             value="arcade">Arcade</button>
                                     </div>
+                                    <button id="search"
+                                        class="text-white bg-secondary border-danger m-3 p-1">Search</button>
                                 </div>
-                                <button id="search"
-                                    class="text-white bg-secondary border-danger m-3 p-1">Search</button>
                             </div>
                         </div>
                     </div>
                     </section>
+
 
                     <section id="cards" class="container">
                         <div class="row">
@@ -177,8 +178,9 @@
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    
+
+
 
 
 </body>
