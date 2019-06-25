@@ -8,7 +8,14 @@ body {
   background: url("/assets/images/game-wp.jpg");
 }
 
-
+body #mainShell {
+  position: absolute;
+  background-color: #A6A3A1;
+  width: 100%;
+  min-height: 500px;
+  position: absolute;
+  z-index: -1;
+}
 
 #headBar {
   z-index: 1;
