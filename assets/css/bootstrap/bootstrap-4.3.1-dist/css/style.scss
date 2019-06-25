@@ -20,7 +20,7 @@ body{
         position: absolute;
         background-color: map-get($mycolors, main);
         width: 100%;
-        height: auto;
+        min-height: 650px;
         position: absolute;
         z-index: -1;
     }
