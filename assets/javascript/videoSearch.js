@@ -74,8 +74,7 @@ $("body").on("click", "#search", function () {
     for(i=0; i < 10;i++){
       var currentGame = response.results[i];
       
-          i++;
-    console.log(nullCount)
+          
     
 
 
@@ -88,16 +87,16 @@ $("body").on("click", "#search", function () {
 
 
     var image = currentGame.image.small_url;
-    console.log(image)
+    console.log(image = +"image")
 
     var description = currentGame.description;
-    console.log(description)
+    console.log(description +" description")
 
     var name = currentGame.name
-    console.log(name)
+    console.log(name + " name")
 
     var rating = currentGame.original_game_rating;
-    console.log(rating)
+    console.log(rating +" rating")
 
     
 
@@ -154,7 +153,6 @@ $("body").on("click", "#search", function () {
 
 
   });
-
 
 
 
