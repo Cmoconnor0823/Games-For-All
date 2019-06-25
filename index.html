@@ -13,9 +13,12 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap-4.3.1-dist/css/style.css">
     <!--Is this the Bootstrap we need???-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </link>
     <!-- This is css for the age verification pop-up/plug-in-->
-    <link rel="stylesheet" href="assets/Html5-sessionStorage-Based-Age-Verification-with-jQuery-Age-Check/dist/agecheck.min.css"></link>
+    <link rel="stylesheet"
+        href="assets/Html5-sessionStorage-Based-Age-Verification-with-jQuery-Age-Check/dist/agecheck.min.css">
+    </link>
     <!--Firebase call starts here-->
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
@@ -39,14 +42,15 @@
     <!--link to our js page-->
     <script src="assets/javascript/videoSearch.js"></script>
     <!-- link to js for pop-up age verification plug-in-->
-    <script src="assets/Html5-sessionStorage-Based-Age-Verification-with-jQuery-Age-Check/dist/jquery.agecheck-min.js"></script>
+    <script
+        src="assets/Html5-sessionStorage-Based-Age-Verification-with-jQuery-Age-Check/dist/jquery.agecheck-min.js"></script>
     <title>Video Search</title>
 </head>
 
 <body>
 
-
     <div id="mainShell">
+
         <header id="headBar" class="container">
             <div class="row">
                 <div class="jumbotron mainBox bg-secondary text-white m-3 p-2 col col-lg-12 text-center ">
@@ -56,25 +60,31 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="card-deck">
-                <div class="card bg-secondary border-danger text-white m-3 p-1 col col-lg-9" id="placeholderForGif">
-                    <div class="card-body m-3 p-1">
-                        <p>This is where the console gif should appear.</p>
-                        <div id="age-gifs-appear-here"></div>
-                        <div id="platform-gifs-appear-here"></div>
-                        <div id="genre-gifs-appear-here"></div>
-                    </div>
+        </header>
 
 
+
+
+        <section id="gif" class="container">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="card-deck">
+                        <div class="card bg-secondary border-danger text-white m-3 p-1 col col-lg-9"
+                            id="placeholderForGif">
+                            <div class="card-body m-3 p-1">
+                                <p>This is where the console gif should appear.</p>
+                                <div id="age-gifs-appear-here"></div>
+                                <div id="platform-gifs-appear-here"></div>
+                                <div id="genre-gifs-appear-here"></div>
+                            </div>
+
+
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
-        </div>
+        </section>
+        <section id="menu" class="container"></section>
 
         <div class="container">
             <div class="row justify-content-center">
@@ -97,53 +107,55 @@
                             </div>
 
 
-                        <div class="btn-group">
-                            <button id="platform" class="btn btn-secondary btn-lg dropdown-toggle" type="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Platform
-                            </button>
-                            <div class="dropdown-menu">
-                                <button id="pc" class="dropdown-item" type="button" value="pc">PC</button>
-                                <button id="nintendoSwitch" class="dropdown-item" type="button"
-                                    value="nintendo-switch">Nintendo Switch</button>
-                                <button id="playstation4" class="dropdown-item" type="button"
-                                    value="playstation4">Playstation 4</button>
-                                <button id="xboxOne" class="dropdown-item" type="button" value="xbox-one">Xbox
-                                    One</button>
-
-                            </div>
-
                             <div class="btn-group">
-                                <button id="genre" class="btn btn-secondary btn-lg dropdown-toggle" type="button"
+                                <button id="platform" class="btn btn-secondary btn-lg dropdown-toggle" type="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Genres
+                                    Platform
                                 </button>
-                                <div class="dropdown-menu" id="genreValue">
-                                    <button id="fighting" class="dropdown-item" type="button"
-                                        value="fighting">Fighting</button>
-                                    <button id="puzzles" class="dropdown-item" type="button"
-                                        value="puzzles">Puzzles</button>
-                                    <button id="rolePlaying" class="dropdown-item" type="button"
-                                        value="role-playing">Role
-                                        Playing</button>
-                                    <button id="sport" class="dropdown-item" type="button" value="sport">Sport</button>
-                                    <button id="adventure" class="dropdown-item" type="button"
-                                        value="adventure">Adventure</button>
-                                    <button id="arcade" class="dropdown-item" type="button"
-                                        value="arcade">Arcade</button>
+                                <div class="dropdown-menu">
+                                    <button id="pc" class="dropdown-item" type="button" value="pc">PC</button>
+                                    <button id="nintendoSwitch" class="dropdown-item" type="button"
+                                        value="nintendo-switch">Nintendo Switch</button>
+                                    <button id="playstation4" class="dropdown-item" type="button"
+                                        value="playstation4">Playstation 4</button>
+                                    <button id="xboxOne" class="dropdown-item" type="button" value="xbox-one">Xbox
+                                        One</button>
+
                                 </div>
+
+                                <div class="btn-group">
+                                    <button id="genre" class="btn btn-secondary btn-lg dropdown-toggle" type="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Genres
+                                    </button>
+                                    <div class="dropdown-menu" id="genreValue">
+                                        <button id="fighting" class="dropdown-item" type="button"
+                                            value="fighting">Fighting</button>
+                                        <button id="puzzles" class="dropdown-item" type="button"
+                                            value="puzzles">Puzzles</button>
+                                        <button id="rolePlaying" class="dropdown-item" type="button"
+                                            value="role-playing">Role
+                                            Playing</button>
+                                        <button id="sport" class="dropdown-item" type="button"
+                                            value="sport">Sport</button>
+                                        <button id="adventure" class="dropdown-item" type="button"
+                                            value="adventure">Adventure</button>
+                                        <button id="arcade" class="dropdown-item" type="button"
+                                            value="arcade">Arcade</button>
+                                    </div>
+                                </div>
+                                <button id="search"
+                                    class="text-white bg-secondary border-danger m-3 p-1">Search</button>
                             </div>
-                            <button id="search" class="text-white bg-secondary border-danger m-3 p-1">Search</button>
                         </div>
                     </div>
-                </div>
-            </section>
+                    </section>
 
-            <section id="cards" class="container">
-                <div class="row">
-                    <!--added an id class here to match the tiny difference from the card html file-->
-                    <div class="card-columns" id="card-deck">
-                        <!-- <div class="card bg-secondary border-danger text-white m-3 p-1 col col-lg-4">
+                    <section id="cards" class="container">
+                        <div class="row">
+                            <!--added an id class here to match the tiny difference from the card html file-->
+                            <div class="card-columns" id="card-deck">
+                                <!-- <div class="card bg-secondary border-danger text-white m-3 p-1 col col-lg-4">
                             <div class="card-header" id="videoGameTitle">This is where the search result of the game
                                 title
                                 should appear</div>
@@ -156,13 +168,15 @@
                             </div>
                         </div> -->
 
-                    </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+
                 </div>
-            </section>
-
-
-
-        </main>
+            </div>
+        </div>
     </div>
 </body>
 

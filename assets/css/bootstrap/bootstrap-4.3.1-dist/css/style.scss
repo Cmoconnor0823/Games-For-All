@@ -17,7 +17,7 @@ body{
     
 
     #mainShell{
-        
+        position: absolute;
         background-color: map-get($mycolors, main);
         width: 100%;
         height: auto;
