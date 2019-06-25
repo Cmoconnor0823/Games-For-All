@@ -20,8 +20,8 @@ $(document).ready(function () {
 });
 
 
-
-$("body").on("click", "#search", function () {
+//this needs to be set on the document not on body to work
+$(document).on("click", "#search", function () {
   console.log("Click")
   console.log(platformValue)
   console.log(ratingValue)
