@@ -1,7 +1,5 @@
 
 
-
-
 $(document).ready(function () {
   console.log("ready!");
 
@@ -21,17 +19,15 @@ $(document).ready(function () {
 
 });
 
-var platform = "pc"
 
-var userChoice = " ";
-// + userChoice + "?platform=" + platform 
-//api_key=[e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed8
 
 $("body").on("click", "#search", function () {
   console.log("Click")
   console.log(platformValue)
   console.log(ratingValue)
   console.log(genreValue)
+
+//Query Friendly Button Values
   //   platform:
   // 	xbox one: 145
   // 	playstation  4: 146
@@ -52,23 +48,13 @@ $("body").on("click", "#search", function () {
   // 	adventure:43
   // 	puzzle: 18
   // 	arcade: n/a
-  // axios.get("http://www.giantbomb.com/api/games/?format=jsonp&api_key=e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed84&filter=region:1,genre:9,rating:16,,platform:145,original_release_date:2010-1-1 00:00:00|2020-1-1 00:00:00&sort=original_release_date:asc&limit=10," , {
-  //   dataType: "jsonp",
-  //   crossDomain: true,
-  //   user_agent: 'ourtablebootcamp',
+  
+  
+  
+    var queryUrl = 'http://www.giantbomb.com/api/games/?format=jsonp&api_key=e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed8&letter=&sortBy=release&filter=original_release_date:2019-01-01%2000:00:00|2020-12-31%2023:59:59,expected_release_year:2019&offset=0&region=1&minRating=4&genre=' + genreValue + '&rating=' + ratingValue + '&platform='+ platformValue + '&limit=10,&field_list=genres,name,description,rating,image'
 
-  //                   jsonp: 'json_callback',
-  //   //                 data: {
-  //   //                     api_key: '[e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed8]',
-  //   //                     query: 'mass effect',
-  //   //                     format: 'jsonp',
-  //   //                     field_list: 'name'
 
-  //   // }
-  // })    .then(response => {
-  //   // Do work here
-  //   console.log(response)
-  // });
+  console.log(queryUrl)
 
   $.ajax({
     type: 'GET',
@@ -78,21 +64,27 @@ $("body").on("click", "#search", function () {
     user_agent: 'ourtablebootcamp',
     // url: "https://www.giantbomb.com/games/?letter=&sortBy=&platform=145&genre=&theme=&minRating=&rating=&region=&___developers=&___publishers=&fromYear=&toYear=",
 
-    url: 'http://www.giantbomb.com/api/games/?format=jsonp&api_key=e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed8&sortBy=release&filter=region:1&filter=genre:' + genreValue + '&filter=rating:' + ratingValue + '&filter=platform:'+ platformValue + '&filter= original_release_date:2010-1-1 00:00:00|2020-1-1 00:00:00&sort=original_release_date:asc&offset=10&results=10&limit=10,',
-    //  url: 'http://api.giantbomb.com/api/search/?api_key=e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed8&format=jsonp' + '&resources=game' + '&filter=name:portal',
-
+    url: queryUrl, 
+  
   }).done(function (response) {
     console.log(response.results)
     var resultCount = response.results;
-
-    for(i=0; i < resultCount.length;i++){
     
-    var currentGame = response.results[i];
 
-    console.log(response.results[i].image.small_url +" image")
-    console.log(response.results[i].description +" description")
-    console.log(response.results[i].name +" name")
-    console.log(response.results[i].original_game_rating+" rating")
+    for(i=0; i < 10;i++){
+      var currentGame = response.results[i];
+      
+          i++;
+    console.log(nullCount)
+    
+
+
+    console.log(response.results[i].image.small_url)
+    console.log(response.results[i].description)
+    console.log(response.results[i].name)
+    console.log(response.results[i].original_game_rating)
+    //  console.log(response.results[i].platforms.name)
+    console.log(response.results[i].original_release_date)  
 
 
     var image = currentGame.image.small_url;
@@ -151,33 +143,13 @@ $("body").on("click", "#search", function () {
       cardDiv.append(cardBody);
 
       $("#card-deck").prepend(cardDiv);
+        
     }
 
     })
     .catch(e => {
       console.log("error", e);
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -189,32 +161,5 @@ $("body").on("click", "#search", function () {
 
 
 
-//   $.ajax({
-//     url: "http://api.giantbomb.com/search/",
-//     dataType: "jsonp",
-//     jsonp: 'json_callback',
-//     data: {
-//         api_key: '[e7b9ce5f17b926a054c14d54e4e5c5ef2cb2fed8]',
-//         query: 'mass effect',
-//         format: 'jsonp',
-//         field_list: 'name'
-//     },
-//     success: function(res) {
-//         console.log(res);
-//     }
-// });
-// });
 
-
-
-//       console.log(response.data);
-//       console.log(response.data.result.title);
-//       console.log(response.data.result.description);
-//       console.log(response.data.result.image);
-//       console.log(response.data.result.genre);
-//       console.log(response.data.result.score);
-
-      
-
-// });
 
