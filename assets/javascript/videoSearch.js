@@ -89,13 +89,13 @@ $("body").on("click", "#search", function () {
     
     var currentGame = response.results[i];
 
-    console.log(response.results[i].image.medium_url)
-    console.log(response.results[i].description)
-    console.log(response.results[i].name)
-    console.log(response.results[i].original_game_rating)
+    console.log(response.results[i].image.small_url +" image")
+    console.log(response.results[i].description +" description")
+    console.log(response.results[i].name +" name")
+    console.log(response.results[i].original_game_rating+" rating")
 
 
-    var image = currentGame.image.medium_url;
+    var image = currentGame.image.small_url;
     console.log(image)
 
     var description = currentGame.description;
@@ -110,11 +110,12 @@ $("body").on("click", "#search", function () {
     
 
     var cardDiv = $("<div>");
-      cardDiv.addClass("card");
+      cardDiv.addClass("card bg-secondary border-danger text-white m-3 p-1");
 
       var cardImage = $("<img>");
       cardImage.attr("class","card-image-top");
       cardImage.attr("src",image);
+      cardImage.attr("id","imageSize")
 
       var cardBody = $("<div>");
       cardBody.attr("class","card-body");
@@ -122,7 +123,7 @@ $("body").on("click", "#search", function () {
       var cardTitle = $("<h5>").text(name);
       cardTitle.attr("class","card-title");
 
-      var cardDescribe = $("<p>").text(description);
+      var cardDescribe = $("<p>").html(description);
       cardDescribe.attr("class","card-text");
 
       var cardFooter1 = $("<p>");
@@ -132,10 +133,10 @@ $("body").on("click", "#search", function () {
       cardFooter2.attr("class","card-text");
 
       var cardGenre = $("<small>").text("genre");
-      cardGenre.attr("class", "text-muted");
+      cardGenre.attr("class", "text-light");
 
       var cardScore = $("<small>").text("Score: " + rating);
-      cardScore.attr("class", "text-muted");
+      cardScore.attr("class", "text-light");
 
       cardFooter1.append(cardGenre);
 
@@ -146,7 +147,7 @@ $("body").on("click", "#search", function () {
       cardBody.append(cardFooter1);
       cardBody.append(cardFooter2);
 
-      cardDiv.append(cardImage);
+      cardBody.append(cardImage);
       cardDiv.append(cardBody);
 
       $("#card-deck").prepend(cardDiv);
