@@ -29,7 +29,7 @@ $(document).on("click", "#pc", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
-            givDiv.attr("class","card-body");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var pcImage = $("<img>");
 
@@ -104,7 +104,7 @@ $(document).on("click", "#nintendoSwitch", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
-            givDiv.attr("class","card-body");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var nswitchImage = $("<img>");
 
@@ -174,7 +174,7 @@ $(document).on("click", "#playstation4", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
-            givDiv.attr("class","card-body"); 
+            gifDiv.attr("class","card-body"); 
             // Creating an image tag
             var play4Image = $("<img>");
 
@@ -246,7 +246,7 @@ $(document).on("click", "#xboxOne", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
-            givDiv.attr("class","card-body"); 
+            gifDiv.attr("class","card-body"); 
             // Creating an image tag
             var xboxImage = $("<img>");
 
@@ -318,7 +318,7 @@ $(document).on("click", "#everyone", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
-            givDiv.attr("class","card-body"); 
+            gifDiv.attr("class","card-body"); 
             // Creating an image tag
             var everyoneImage = $("<img>");
 
@@ -392,7 +392,7 @@ $(document).on("click", "#teen", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
-            givDiv.attr("class", "card-body");
+            gifDiv.attr("class", "card-body");
             // Creating an image tag
             var teenImage = $("<img>");
 
