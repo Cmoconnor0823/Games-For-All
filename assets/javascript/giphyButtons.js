@@ -674,6 +674,7 @@ $(document).on("click", "#puzzles", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var puzzleImage = $("<img>");
 
@@ -745,6 +746,7 @@ $(document).on("click", "#rolePlaying", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var roleImage = $("<img>");
 
@@ -813,6 +815,7 @@ $(document).on("click", "#sport", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var sportsImage = $("<img>");
 
@@ -883,6 +886,7 @@ $(document).on("click", "#adventure", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var adventureImage = $("<img>");
 
@@ -954,6 +958,7 @@ $(document).on("click", "#arcade", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var arcadeImage = $("<img>");
 
