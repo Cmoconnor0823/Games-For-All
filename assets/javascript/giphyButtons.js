@@ -953,3 +953,247 @@ $(document).on("click", "#arcade", function () {
     $("#genre").hide();
 
 });
+var database = firebase.database();
+
+//Intitial variables for the search count. 
+
+var seSearch=0;
+var stSearch=0;
+var smSearch=0;
+var saSearch=0;
+var sfightSearch=0;
+var spuzzleSearch=0;
+var srpgSearch=0;
+var ssportsSearch=0;
+var sarcadeSearch=0;
+var sadventureSearch=0;
+var spcSearch=0;
+var sxboxSearch=0;
+var splaystationSearch=0;
+var sswitchSearch=0;
+var genreSelect;
+var ageSelect;
+var platformSelect;
+
+
+
+database.ref().set({
+    "SearchStats":{
+        Ratings:{
+            "Everyone":seSearch,
+            "Teen":stSearch,
+            "Mature":smSearch,
+            "Adult":saSearch,
+        },
+        Genre:{
+            "Fighting":sfightSearch,
+            "Puzzles":spuzzleSearch,
+            "Roleplaying":srpgSearch,
+            "Sports":ssportsSearch,
+            "Arcade":sarcadeSearch,
+            "Adventure":sadventureSearch,
+      },
+        Platform:{
+            "PC":spcSearch,
+            "XboxOne":sxboxSearch,
+            "Playstation4":splaystationSearch,
+            "NintendoSwitch":sswitchSearch,
+        }         
+    },
+});
+
+database.ref("SearchStats").on("value", function(snapshot){
+
+  database.ref("SearchStats/Genre").on("value", function(genreSnapshot){
+  if(genreSnapshot.val().Adventure == null || undefined || NaN){
+    adventureSearch = 0;
+  }else{
+      adventureSearch = genreSnapshot.val().Adventure;
+  }
+  if(genreSnapshot.val().Fighting == null || undefined || NaN){
+      fightSearch = 0;
+  }else{
+        fightSearch = genreSnapshot.val().Fighting;
+  }
+  if(genreSnapshot.val().Arcade == null || undefined || NaN){
+      arcadeSearch = 0;
+  }else{
+      arcadeSearch = genreSnapshot.val().Arcade;//ref("Genre/Arcade").val();
+  }
+  if(genreSnapshot.val().Puzzles == null || undefined || NaN){
+      puzzleSearch = 0;
+  }else{
+      puzzleSearch = genreSnapshot.val().Puzzles; //ref("Genre/Puzzles").val();
+  }
+  if(genreSnapshot.val().Sports == null || undefined || NaN){//////////////////////////////
+      sportsSearch = 0;
+  }else{
+      sportsSearch = genreSnapshot.val().Sports; 
+  }
+  if(genreSnapshot.val().Roleplaying == null || undefined || NaN){
+      rpgSearch = 0;
+  }else{
+      rpgSearch = genreSnapshot.val().Roleplaying; //ref("Genre/Roleplaying").val();
+
+  }
+});
+
+  database.ref("SearchStats/Ratings").on("value", function(ratingsSnapshot){
+  if(ratingsSnapshot.val().Everyone == null || undefined || NaN){
+      eSearch = 0;
+  }else{
+      eSearch = ratingsSnapshot.val().Everyone;
+  }
+  if(ratingsSnapshot.val().Teen == null || undefined || NaN){
+      tSearch = 0;
+  }else{
+      tSearch = ratingsSnapshot.val().Teen
+  }
+  if(mSearch = ratingsSnapshot.val().Mature == null || undefined || NaN){
+      mSearch = 0;
+  }else{
+      mSearch = ratingsSnapshot.val().Mature
+  }
+  if(ratingsSnapshot.val().Adult == null || undefined || NaN){
+      aSearch = 0;
+  }else{
+      aSearch = ratingsSnapshot.val().Adult; //ref("Genre/Roleplaying").val();
+
+  }
+});
+  database.ref("SearchStats/Genre").on("value", function(platformSnapshot){
+  if(platformSnapshot.val().XboxOne == null || undefined || NaN){
+      xboxSearch = 0;
+  }else{
+      xboxSearch = platformSnapshot.val().XboxOne; //ref("Genre/Roleplaying").val();
+
+  }
+  if(platformSnapshot.val().Playstation4 == null || undefined || NaN){
+      playstationSearch = 0;
+  }else{
+      playstationSearch = platformSnapshot.val().Playstation4; //ref("Genre/Roleplaying").val();
+
+  }
+  if(platformSnapshot.val().NintendoSwitch == null || undefined || NaN){
+      switchSearch = 0;
+  }else{
+      switchSearch = platformSnapshot.val().NintendoSwitch; //ref("Genre/Roleplaying").val();
+
+  }
+  if(platformSnapshot.val().PC == null || undefined || NaN){
+      pcSearch = 0;
+  }else{
+      pcSearch = platformSnapshot.val().PC; //ref("Genre/Roleplaying").val();
+
+  }
+  });
+
+
+
+
+
+
+
+    //xboxSearch = snapshot.val().XboxOne; //ref("Platform/Xbox One").val();
+    //playstationSearch = snapshot.val().Playstation4; //ref("Platform/Playstation 4").val();
+    //switchSearch = snapshot.val().NintendoSwitch; //ref("Platform/Nintendo Switch").val();
+    //pcSearch = snapshot.val().pc; //ref("Platform/PC").val();
+
+
+
+
+
+
+
+
+
+});
+
+//
+$("body").on("click", ".gen", function(){
+  genreSelect = $(this).attr("value");
+  console.log(genreSelect)
+  });
+//
+$("body").on("click", ".plat", function(){
+  platformSelect = $(this).attr("value");
+  console.log(platformSelect)
+  });
+$("body").on("click", ".ages", function(){
+  ageSelect = $(this).attr("value");
+  console.log(ageSelect)
+  });
+
+$("body").on("click", "#search", function(){
+   
+  console.log(fightSearch);
+
+  switch (genreSelect) {
+      case "fighting":
+          fightSearch++
+          database.ref("SearchStats/Genre/Fighting").set(fightSearch);
+        break;
+      case "puzzles":
+          puzzleSearch++
+          database.ref("SearchStats/Genre/Puzzles").set(puzzleSearch);
+        break;
+      case "role-playing":
+         rpgSearch++
+         database.ref("SearchStats/Genre/Roleplaying").set(rpgSearch);
+        break;
+      case "sport":
+        sportsSearch++
+        database.ref("SearchStats/Genre/Sports").set(sportsSearch);
+        break;
+      case "adventure":
+          adventureSearch++
+          database.ref("SearchStats/Genre/Adventure").set(adventureSearch);
+        break;
+      case "arcade":
+        arcadeSearch++
+        database.ref("SearchStats/Genre/Arcade").set(arcadeSearch);
+        break;
+      default:
+          break;
+    }
+    switch (ageSelect) {
+      case "everyone":
+          eSearch++
+          database.ref("SearchStats/Ratings/Everyone").set(eSearch);
+        break;
+      case "teen":
+          tSearch++
+          database.ref("SearchStats/Ratings/Teen").set(tSearch);
+        break;
+      case "mature":
+         mSearch++
+         database.ref("SearchStats/Ratings/Mature").set(mSearch);
+        break;
+      case "adult":
+        aSearch++
+        database.ref("SearchStats/Ratings/Adult").set(aSearch);
+        break;
+      default:
+          break;
+    }
+    switch (platformSelect) {
+      case "nintendo-switch":
+          switchSearch++
+          database.ref("SearchStats/Platform/Nintendo Switch").set(switchSearch);
+        break;
+      case "pc":
+          pcSearch++
+          database.ref("SearchStats/Platform/PC").set(pcSearch);
+        break;
+      case "xboxOne":
+         xboxSearch++
+         database.ref("SearchStats/Platform/XboxOne").set(xboxSearch);
+        break;
+      case "playstation4":
+        playstationSearch++
+        database.ref("SearchStats/Platform/Playstation4").set(playstationSearch);
+        break;
+      default:
+          break;
+    }
+});

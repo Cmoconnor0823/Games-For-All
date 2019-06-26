@@ -37,6 +37,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <script>
+            //firebase key configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDProkYgdjY3rTaaca5u9VipRAeaPKJnjE",
+        authDomain: "video-search-5c1ee.firebaseapp.com",
+        databaseURL: "https://video-search-5c1ee.firebaseio.com",
+        projectId: "video-search-5c1ee",
+        storageBucket: "video-search-5c1ee.appspot.com",
+        messagingSenderId: "607886212195",
+        appId: "1:607886212195:web:c661006422412d65"
+      };
+      firebase.initializeApp(firebaseConfig);
+      console.log("firebase");
+        </script>
 
         <!--link to our js page-->
         <script src="assets/javascript/videoSearch.js"></script>
@@ -97,11 +111,11 @@
                                 For Age Ranges
                             </button>
                             <div class="dropdown-menu">
-                                <button id="everyone" class="dropdown-item" type="button"
+                                <button id="everyone" class="dropdown-item ages" type="button"
                                     value="everyone">Everyone</button>
-                                <button id="teen" class="dropdown-item" type="button" value="teen">Teen</button>
-                                <button id="mature" class="dropdown-item" type="button" value="mature">Mature</button>
-                                <button id="adult" class="dropdown-item" type="button" value="adult-only">Adult
+                                <button id="teen" class="dropdown-item ages" type="button" value="teen">Teen</button>
+                                <button id="mature" class="dropdown-item ages" type="button" value="mature">Mature</button>
+                                <button id="adult" class="dropdown-item ages" type="button" value="adult-only">Adult
                                     Only</button>
 
                             </div>
@@ -113,12 +127,12 @@
                                     Platform
                                 </button>
                                 <div class="dropdown-menu">
-                                    <button id="pc" class="dropdown-item" type="button" value="pc">PC</button>
-                                    <button id="nintendoSwitch" class="dropdown-item" type="button"
+                                    <button id="pc" class="dropdown-item plat" type="button" value="pc">PC</button>
+                                    <button id="nintendoSwitch" class="dropdown-item plat" type="button"
                                         value="nintendo-switch">Nintendo Switch</button>
-                                    <button id="playstation4" class="dropdown-item" type="button"
+                                    <button id="playstation4" class="dropdown-item plat" type="button"
                                         value="playstation4">Playstation 4</button>
-                                    <button id="xboxOne" class="dropdown-item" type="button" value="xbox-one">Xbox
+                                    <button id="xboxOne" class="dropdown-item plat" type="button" value="xbox-one">Xbox
                                         One</button>
 
                                 </div>
@@ -129,18 +143,18 @@
                                         Genres
                                     </button>
                                     <div class="dropdown-menu" id="genreValue">
-                                        <button id="fighting" class="dropdown-item" type="button"
+                                        <button id="fighting" class="dropdown-item gen" type="button"
                                             value="fighting">Fighting</button>
-                                        <button id="puzzles" class="dropdown-item" type="button"
+                                        <button id="puzzles" class="dropdown-item gen" type="button"
                                             value="puzzles">Puzzles</button>
-                                        <button id="rolePlaying" class="dropdown-item" type="button"
+                                        <button id="rolePlaying" class="dropdown-item gen" type="button"
                                             value="role-playing">Role
                                             Playing</button>
-                                        <button id="sport" class="dropdown-item" type="button"
+                                        <button id="sport" class="dropdown-item gen" type="button"
                                             value="sport">Sport</button>
-                                        <button id="adventure" class="dropdown-item" type="button"
+                                        <button id="adventure" class="dropdown-item gen" type="button"
                                             value="adventure">Adventure</button>
-                                        <button id="arcade" class="dropdown-item" type="button"
+                                        <button id="arcade" class="dropdown-item gen" type="button"
                                             value="arcade">Arcade</button>
                                     </div>
                                     <button id="search"
