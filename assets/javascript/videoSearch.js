@@ -123,13 +123,15 @@ $(document).on("click", "#search", function () {
       var cardFooter2 = $("<p>");
       cardFooter2.attr("class","card-text");
 
-      var cardGenre = $("<small>").text("genre");
-      cardGenre.attr("class", "text-light");
+      // var cardGenre = $("<small>").text("genre");
+      // cardGenre.attr("class", "text-light");
 
+      if (!(rating == undefined || rating == null)){
       var cardScore = $("<small>").text("Score: " + rating);
       cardScore.attr("class", "text-light");
+      }
 
-      cardFooter1.append(cardGenre);
+      // cardFooter1.append(cardGenre);
 
       cardFooter2.append(cardScore);
 
