@@ -463,6 +463,7 @@ $(document).on("click", "#mature", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var matureImage = $("<img>");
 
