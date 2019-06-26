@@ -42,7 +42,14 @@ body{
     border-width: 5px;
     border-color: #F2F2F2;
     border-radius: 50px;
+
+    #gifs-appear-here{
+        img{
+            width:50%;
+        }
+    }
 }
+
 #menu{
     z-index: 1;
     position: relative;
