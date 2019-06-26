@@ -57,20 +57,20 @@ $(document).on("click", "#pc", function () {
             $("#gifs-appear-here").prepend(gifDiv);
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
     console.log($("#pc").text());
     searchFor.push($("#pc").text());
@@ -133,20 +133,20 @@ $(document).on("click", "#nintendoSwitch", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
     console.log($("#nintendoSwitch").text());
     searchFor.push($("#nintendoSwitch").text());
@@ -204,20 +204,20 @@ $(document).on("click", "#playstation4", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
 
     console.log($("#playstation4").text());
@@ -277,20 +277,20 @@ $(document).on("click", "#xboxOne", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
 
     console.log($("#xboxOne").text());
@@ -350,20 +350,20 @@ $(document).on("click", "#everyone", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
 
     console.log($("#everyone").text());
@@ -423,20 +423,20 @@ $(document).on("click", "#teen", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
 
 
@@ -486,20 +486,20 @@ $(document).on("click", "#mature", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
 
 
@@ -549,20 +549,20 @@ $(document).on("click", "#adult", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
     $.ageCheck({minAge: minAge = 18}); 
 
@@ -617,20 +617,20 @@ $(document).on("click", "#fighting", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
     console.log($("#fighting").text());
     searchFor.push($("#fighting").text());
@@ -684,20 +684,20 @@ $(document).on("click", "#puzzles", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
     console.log($("#puzzles").text());
     searchFor.push($("#puzzles").text());
@@ -751,20 +751,20 @@ $(document).on("click", "#rolePlaying", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
     console.log($("#rolePlaying").text());
     searchFor.push($("#rolePlaying").text());
@@ -814,20 +814,20 @@ $(document).on("click", "#sport", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
 
     console.log($("#sport").text());
@@ -879,20 +879,20 @@ $(document).on("click", "#adventure", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
     console.log($("#adventure").text());
     searchFor.push($("#adventure").text());
@@ -945,24 +945,41 @@ $(document).on("click", "#arcade", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
     console.log($("#arcade").text());
     searchFor.push($("#arcade").text());
     console.log(searchFor);
     $("#genre").hide();
 
+});
+
+
+
+$(document).on('click','img',function(){
+    console.log("click")
+    // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    var state = $(this).attr("data-type");
+    // Then, set the image's data-state to animate
+    // Else set src to the data-still value
+    if (state === ("still")) {
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-type", "animate");
+    } else {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-type", "still");
+    }
 });
