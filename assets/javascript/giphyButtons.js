@@ -53,8 +53,8 @@ $(document).on("click", "#pc", function () {
             gifDiv.append(pcImage);
             gifDiv.append(pcGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#platform-gifs-appear-here").prepend(gifDiv);
-
+            // $("#platform-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
         })
 
     $("body").on("click", ".gif", function () {
@@ -128,7 +128,8 @@ $(document).on("click", "#nintendoSwitch", function () {
             gifDiv.append(nswitchImage);
             gifDiv.append(nswitchGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#platform-gifs-appear-here").prepend(gifDiv);
+            // $("#platform-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -198,7 +199,8 @@ $(document).on("click", "#playstation4", function () {
             gifDiv.append(play4Image);
             gifDiv.append(play4GifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#platform-gifs-appear-here").prepend(gifDiv);
+            // $("#platform-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -270,7 +272,8 @@ $(document).on("click", "#xboxOne", function () {
             gifDiv.append(xboxImage);
             gifDiv.append(xboxGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#platform-gifs-appear-here").prepend(gifDiv);
+            // $("#platform-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -342,7 +345,8 @@ $(document).on("click", "#everyone", function () {
             gifDiv.append(everyoneImage);
             gifDiv.append(everyoneGifTitle);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#age-gifs-appear-here").prepend(gifDiv);
+            // $("#age-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -414,7 +418,8 @@ $(document).on("click", "#teen", function () {
             gifDiv.addClass("gifDiv");
             gifDiv.append(teenImage);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#age-gifs-appear-here").prepend(gifDiv);
+            // $("#age-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -476,7 +481,8 @@ $(document).on("click", "#mature", function () {
             gifDiv.addClass("gifDiv");
             gifDiv.append(matureImage);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#age-gifs-appear-here").prepend(gifDiv);
+            // $("#age-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -538,7 +544,8 @@ $(document).on("click", "#adult", function () {
             gifDiv.addClass("gifDiv");
             gifDiv.append(adultImage);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#age-gifs-appear-here").prepend(gifDiv);
+            // $("#age-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -605,7 +612,8 @@ $(document).on("click", "#fighting", function () {
             gifDiv.addClass("gifDiv");
             gifDiv.append(fightImage);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#genre-gifs-appear-here").prepend(gifDiv);
+            // $("#genre-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -671,7 +679,8 @@ $(document).on("click", "#puzzles", function () {
             gifDiv.addClass("gifDiv");
             gifDiv.append(puzzleImage);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#genre-gifs-appear-here").prepend(gifDiv);
+            // $("#genre-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -737,7 +746,8 @@ $(document).on("click", "#rolePlaying", function () {
             gifDiv.addClass("gifDiv");
             gifDiv.append(roleImage);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#genre-gifs-appear-here").prepend(gifDiv);
+            // $("#genre-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -799,7 +809,8 @@ $(document).on("click", "#sport", function () {
             gifDiv.addClass("gifDiv");
             gifDiv.append(sportsImage);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#genre-gifs-appear-here").prepend(gifDiv);
+            // $("#genre-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -863,7 +874,8 @@ $(document).on("click", "#adventure", function () {
             gifDiv.addClass("gifDiv");
             gifDiv.append(adventureImage);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#genre-gifs-appear-here").prepend(gifDiv);
+            // $("#genre-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
@@ -928,7 +940,8 @@ $(document).on("click", "#arcade", function () {
             gifDiv.addClass("gifDiv");
             gifDiv.append(arcadeImage);
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-            $("#genre-gifs-appear-here").prepend(gifDiv);
+            // $("#genre-gifs-appear-here").prepend(gifDiv);
+            $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
