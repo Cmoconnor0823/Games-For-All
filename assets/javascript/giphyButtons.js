@@ -14,7 +14,7 @@ var searchFor = [];
 $(document).on("click", "#pc", function () {
     platformValue = 94;
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=computer game logo=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=computer%20game%20logo=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -88,7 +88,7 @@ $(document).on("click", "#nintendoSwitch", function () {
 
     platformValue = 157;
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=nintendo switch device&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=nintendo%20switch%20device&limit=10&offset=0&rating=G&lang=en";
 
     console.log(queryURL);
     // Performing our AJAX GET request
@@ -376,7 +376,7 @@ $(document).on("click", "#teen", function () {
     ratingValue = 1;
 
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=teen video gamer&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=teen%20video%20gamer&limit=10&offset=0&rating=G&lang=en";
 
     console.log(queryURL);
     // Performing our AJAX GET request
@@ -572,7 +572,7 @@ $(document).on("click", "#fighting", function () {
 
     genreValue = 9;
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=video_game fighting&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=video_game%20fighting&limit=10&offset=0&rating=G&lang=en";
 
     console.log(queryURL);
     // Performing our AJAX GET request
@@ -638,7 +638,7 @@ $(document).on("click", "#puzzles", function () {
 
     genreValue = 18;
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=video_game puzzles&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=video_game%20puzzles&limit=10&offset=0&rating=G&lang=en";
 
     console.log(queryURL);
     // Performing our AJAX GET request
@@ -767,7 +767,7 @@ $(document).on("click", "#rolePlaying", function () {
 
 $(document).on("click", "#sport", function () {
     genreValue = 3;
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=sports video games&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=sports%20video%20games&limit=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
@@ -830,7 +830,7 @@ $(document).on("click", "#adventure", function () {
 
     genreValue = 43;
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=adventure video games&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=adventure%20video%20games&limit=10&offset=0&rating=G&lang=en";
 
     console.log(queryURL);
     // Performing our AJAX GET request
@@ -894,7 +894,7 @@ $(document).on("click", "#adventure", function () {
 $(document).on("click", "#arcade", function () {
 
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=arcade style video game&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=arcade%20style%20video%20game&limit=10&offset=0&rating=G&lang=en";
     genreValue = "";
 
     console.log(queryURL);
