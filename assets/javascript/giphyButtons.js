@@ -159,7 +159,7 @@ $(document).on("click", "#nintendoSwitch", function () {
 
 $(document).on("click", "#playstation4", function () {
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=playstationcontroler&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=playstation%20controler&limit=10&offset=0&rating=G&lang=en";
 
     console.log(queryURL);
     $.ajax({
@@ -303,7 +303,7 @@ $(document).on("click", "#xboxOne", function () {
 $(document).on("click", "#everyone", function () {
     ratingValue = 6;
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=no age limit&limit=10&offset=0&rating=G&lang=en";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vhCJlVOgblzc6OCgihCPSyI30TEXkdqj&q=no%20age%20limit&limit=10&offset=0&rating=G&lang=en";
     console.log(queryURL);
     // Performing our AJAX GET request
     $.ajax({
