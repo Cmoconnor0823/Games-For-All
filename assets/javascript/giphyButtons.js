@@ -3,7 +3,6 @@ var genreValue= "";
 var ratingValue="";
 
 $(document).ready(function () {
-    var userQuery = [];
     console.log("really ready!");
 
 });

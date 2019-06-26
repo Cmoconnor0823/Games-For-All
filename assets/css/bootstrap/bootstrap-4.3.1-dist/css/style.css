@@ -33,6 +33,10 @@ body #mainShell {
   border-radius: 50px;
 }
 
+#gif #gifs-appear-here img {
+  width: 50%;
+}
+
 #menu {
   z-index: 1;
   position: relative;
