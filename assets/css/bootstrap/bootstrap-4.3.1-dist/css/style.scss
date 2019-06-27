@@ -14,7 +14,7 @@ body, html {
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
-    background: url("/assets/images/game-wp.jpg");
+    background: url("../../../../images/controller-wp.jpg");
     
 
     #mainShell{
@@ -45,10 +45,13 @@ body{
 
     #gifs-appear-here{
         img{
-            width: 50%;
+
+            width:50%;
+
         }
     }
 }
+
 #menu{
     z-index: 1;
     position: relative;
@@ -64,10 +67,17 @@ img{
     width: 80%;
 }
 
+@include media-breakpoint-up(sm) {
+    .btn-group {
+      display: block;
+    }
+  }
+
 
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
 
 .card-columns {
    @include media-breakpoint-only(xl) {
