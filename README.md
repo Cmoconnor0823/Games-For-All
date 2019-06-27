@@ -10,5 +10,9 @@ Where users can get help with your project...
 Who maintains and contributes to the project?
 ----
 
-What our mvp is..
+What our mvp is.....
+
+
+
+Limited Results: GiantBomb's free api has limited results. Currently the free api, does not have the functionality to filter out unreleased or undefined responses. This is resolved with the paid api. Our query seemlessly matches the offical GiantBomb search criteria.
 
