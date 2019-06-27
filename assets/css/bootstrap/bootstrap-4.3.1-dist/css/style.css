@@ -5,12 +5,14 @@ body, html {
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 0;
+  background: url("/assets/images/game-wp.jpg");
 }
 
 body #mainShell {
+  position: absolute;
   background-color: #A6A3A1;
   width: 100%;
-  height: auto;
+  min-height: 500px;
   position: absolute;
   z-index: -1;
 }
@@ -29,6 +31,10 @@ body #mainShell {
   border-width: 5px;
   border-color: #F2F2F2;
   border-radius: 50px;
+}
+
+#gif #gifs-appear-here img {
+  width: 50%;
 }
 
 #menu {
