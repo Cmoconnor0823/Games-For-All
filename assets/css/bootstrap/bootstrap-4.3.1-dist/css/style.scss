@@ -65,10 +65,17 @@ img{
     width: 80%;
 }
 
+@include media-breakpoint-up(sm) {
+    .btn-group {
+      display: block;
+    }
+  }
+
 
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
 
 .card-columns {
    @include media-breakpoint-only(xl) {
