@@ -3,7 +3,6 @@ var genreValue= "";
 var ratingValue="";
 
 $(document).ready(function () {
-    var userQuery = [];
     console.log("really ready!");
 
 });
@@ -57,20 +56,20 @@ $(document).on("click", "#pc", function () {
             $("#gifs-appear-here").prepend(gifDiv);
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
     console.log($("#pc").text());
     searchFor.push($("#pc").text());
@@ -133,20 +132,20 @@ $(document).on("click", "#nintendoSwitch", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
     console.log($("#nintendoSwitch").text());
     searchFor.push($("#nintendoSwitch").text());
@@ -204,20 +203,20 @@ $(document).on("click", "#playstation4", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
 
     console.log($("#playstation4").text());
@@ -277,20 +276,20 @@ $(document).on("click", "#xboxOne", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
 
     console.log($("#xboxOne").text());
@@ -350,20 +349,20 @@ $(document).on("click", "#everyone", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
 
     console.log($("#everyone").text());
@@ -423,20 +422,20 @@ $(document).on("click", "#teen", function () {
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
 
 
@@ -464,6 +463,7 @@ $(document).on("click", "#mature", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var matureImage = $("<img>");
 
@@ -476,30 +476,34 @@ $(document).on("click", "#mature", function () {
             matureImage.attr("data-type", "still");
             matureImage.attr("class", "gif");
 
+            var matureGifTitle = $("<h5>");
+            matureGifTitle.attr("class","title");
+            matureGifTitle.text("Mature"); 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(matureImage);
+            gifDiv.append(matureGifTitle)
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
             // $("#age-gifs-appear-here").prepend(gifDiv);
             $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
 
 
@@ -539,30 +543,34 @@ $(document).on("click", "#adult", function () {
             adultImage.attr("data-type", "still");
             adultImage.attr("class", "gif");
 
+            var adultGifTitle = $("<h5>");
+            adultGifTitle.attr("class","title");
+            adultGifTitle.text("Adult"); 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(adultImage);
+            gifDiv.append(adultGifTitle)
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
             // $("#age-gifs-appear-here").prepend(gifDiv);
             $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
     $.ageCheck({minAge: minAge = 18}); 
 
@@ -605,32 +613,37 @@ $(document).on("click", "#fighting", function () {
             fightImage.attr("data-still", results[0].images.fixed_height_still.url);
             fightImage.attr("data-animate", results[0].images.fixed_height.url);
             fightImage.attr("data-type", "still");
-            fightImage.attr("class", "gif");
+            fightImage.attr("class", "gif");    
+
+            var fightGifTitle = $("<h5>");
+            fightGifTitle.attr("class","title");
+            fightGifTitle.text("Fighting"); 
 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(fightImage);
+            gifDiv.append(fightGifTitle)
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
             // $("#genre-gifs-appear-here").prepend(gifDiv);
             $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
     console.log($("#fighting").text());
     searchFor.push($("#fighting").text());
@@ -662,6 +675,7 @@ $(document).on("click", "#puzzles", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var puzzleImage = $("<img>");
 
@@ -674,30 +688,34 @@ $(document).on("click", "#puzzles", function () {
             puzzleImage.attr("data-type", "still");
             puzzleImage.attr("class", "gif");
 
+            var puzzleGifTitle = $("<h5>");
+            puzzleGifTitle.attr("class","title");
+            puzzleGifTitle.text("Puzzles"); 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(puzzleImage);
+            gifDiv.append(puzzleGifTitle)
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
             // $("#genre-gifs-appear-here").prepend(gifDiv);
             $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
     console.log($("#puzzles").text());
     searchFor.push($("#puzzles").text());
@@ -729,6 +747,7 @@ $(document).on("click", "#rolePlaying", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var roleImage = $("<img>");
 
@@ -741,30 +760,35 @@ $(document).on("click", "#rolePlaying", function () {
             roleImage.attr("data-type", "still");
             roleImage.attr("class", "gif");
 
+            var roleGifTitle = $("<h5>");
+            roleGifTitle.attr("class","title");
+            roleGifTitle.text("Role Playing"); 
+
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(roleImage);
+            gifDiv.append(roleGifTitle)
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
             // $("#genre-gifs-appear-here").prepend(gifDiv);
             $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
     console.log($("#rolePlaying").text());
     searchFor.push($("#rolePlaying").text());
@@ -792,6 +816,7 @@ $(document).on("click", "#sport", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var sportsImage = $("<img>");
 
@@ -804,30 +829,35 @@ $(document).on("click", "#sport", function () {
             sportsImage.attr("data-type", "still");
             sportsImage.attr("class", "gif");
 
+            var sportsGifTitle = $("<h5>");
+            sportsGifTitle.attr("class","title")    ;
+            sportsGifTitle.text("Sport"); 
+
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(sportsImage);
+            gifDiv.append(sportsGifTitle)
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
             // $("#genre-gifs-appear-here").prepend(gifDiv);
             $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
 
     console.log($("#sport").text());
@@ -857,6 +887,7 @@ $(document).on("click", "#adventure", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var adventureImage = $("<img>");
 
@@ -869,30 +900,35 @@ $(document).on("click", "#adventure", function () {
             adventureImage.attr("data-type", "still");
             adventureImage.attr("class", "gif");
 
+            var adventureGifTitle = $("<h5>");
+            adventureGifTitle.attr("class","title");
+            adventureGifTitle.text("Adventure"); 
+
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(adventureImage);
+            gifDiv.append(adventureGifTitle)
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
             // $("#genre-gifs-appear-here").prepend(gifDiv);
             $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
     console.log($("#adventure").text());
     searchFor.push($("#adventure").text());
@@ -923,6 +959,7 @@ $(document).on("click", "#arcade", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var arcadeImage = $("<img>");
 
@@ -935,34 +972,298 @@ $(document).on("click", "#arcade", function () {
             arcadeImage.attr("data-type", "still");
             arcadeImage.attr("class", "gif");
 
+            var arcadeGifTitle = $("<h5>");
+            arcadeGifTitle.attr("class","title");
+            arcadeGifTitle.text("Arcade"); 
 
             // Appending the animalImage we created to the "gifDiv" div we created
             gifDiv.addClass("gifDiv");
             gifDiv.append(arcadeImage);
+            gifDiv.append(arcadeGifTitle)
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
             // $("#genre-gifs-appear-here").prepend(gifDiv);
             $("#gifs-appear-here").prepend(gifDiv);
 
         })
 
-    $("body").on("click", ".gif", function () {
-        console.log("click")
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-type");
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === ("still")) {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-type", "animate");
-        } else {
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-type", "still");
-        }
-    });
+    // $("body").on("click", ".gif", function () {
+    //     console.log("click")
+    //     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    //     var state = $(this).attr("data-type");
+    //     // Then, set the image's data-state to animate
+    //     // Else set src to the data-still value
+    //     if (state === ("still")) {
+    //         $(this).attr("src", $(this).attr("data-animate"));
+    //         $(this).attr("data-type", "animate");
+    //     } else {
+    //         $(this).attr("src", $(this).attr("data-still"));
+    //         $(this).attr("data-type", "still");
+    //     }
+    // });
 
     console.log($("#arcade").text());
     searchFor.push($("#arcade").text());
     console.log(searchFor);
     $("#genre").hide();
 
+});
+
+$(document).on('click','img',function(){
+    console.log("click")
+    // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    var state = $(this).attr("data-type");
+    // Then, set the image's data-state to animate
+    // Else set src to the data-still value
+    if (state === ("still")) {
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-type", "animate");
+    } else {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-type", "still");
+    }
+});
+
+var database = firebase.database();
+
+//Intitial variables for the search count. 
+
+var seSearch=0;
+var stSearch=0;
+var smSearch=0;
+var saSearch=0;
+var sfightSearch=0;
+var spuzzleSearch=0;
+var srpgSearch=0;
+var ssportsSearch=0;
+var sarcadeSearch=0;
+var sadventureSearch=0;
+var spcSearch=0;
+var sxboxSearch=0;
+var splaystationSearch=0;
+var sswitchSearch=0;
+var genreSelect;
+var ageSelect;
+var platformSelect;
+
+
+
+database.ref().set({
+    "SearchStats":{
+        Ratings:{
+            "Everyone":seSearch,
+            "Teen":stSearch,
+            "Mature":smSearch,
+            "Adult":saSearch,
+        },
+        Genre:{
+            "Fighting":sfightSearch,
+            "Puzzles":spuzzleSearch,
+            "Roleplaying":srpgSearch,
+            "Sports":ssportsSearch,
+            "Arcade":sarcadeSearch,
+            "Adventure":sadventureSearch,
+      },
+        Platform:{
+            "PC":spcSearch,
+            "XboxOne":sxboxSearch,
+            "Playstation4":splaystationSearch,
+            "NintendoSwitch":sswitchSearch,
+        }         
+    },
+});
+
+database.ref("SearchStats").on("value", function(snapshot){
+
+  database.ref("SearchStats/Genre").on("value", function(genreSnapshot){
+  if(genreSnapshot.val().Adventure == null || undefined || NaN){
+    adventureSearch = 0;
+  }else{
+      adventureSearch = genreSnapshot.val().Adventure;
+  }
+  if(genreSnapshot.val().Fighting == null || undefined || NaN){
+      fightSearch = 0;
+  }else{
+        fightSearch = genreSnapshot.val().Fighting;
+  }
+  if(genreSnapshot.val().Arcade == null || undefined || NaN){
+      arcadeSearch = 0;
+  }else{
+      arcadeSearch = genreSnapshot.val().Arcade;//ref("Genre/Arcade").val();
+  }
+  if(genreSnapshot.val().Puzzles == null || undefined || NaN){
+      puzzleSearch = 0;
+  }else{
+      puzzleSearch = genreSnapshot.val().Puzzles; //ref("Genre/Puzzles").val();
+  }
+  if(genreSnapshot.val().Sports == null || undefined || NaN){//////////////////////////////
+      sportsSearch = 0;
+  }else{
+      sportsSearch = genreSnapshot.val().Sports; 
+  }
+  if(genreSnapshot.val().Roleplaying == null || undefined || NaN){
+      rpgSearch = 0;
+  }else{
+      rpgSearch = genreSnapshot.val().Roleplaying; //ref("Genre/Roleplaying").val();
+
+  }
+});
+
+  database.ref("SearchStats/Ratings").on("value", function(ratingsSnapshot){
+  if(ratingsSnapshot.val().Everyone == null || undefined || NaN){
+      eSearch = 0;
+  }else{
+      eSearch = ratingsSnapshot.val().Everyone;
+  }
+  if(ratingsSnapshot.val().Teen == null || undefined || NaN){
+      tSearch = 0;
+  }else{
+      tSearch = ratingsSnapshot.val().Teen
+  }
+  if(mSearch = ratingsSnapshot.val().Mature == null || undefined || NaN){
+      mSearch = 0;
+  }else{
+      mSearch = ratingsSnapshot.val().Mature
+  }
+  if(ratingsSnapshot.val().Adult == null || undefined || NaN){
+      aSearch = 0;
+  }else{
+      aSearch = ratingsSnapshot.val().Adult; //ref("Genre/Roleplaying").val();
+
+  }
+});
+  database.ref("SearchStats/Genre").on("value", function(platformSnapshot){
+  if(platformSnapshot.val().XboxOne == null || undefined || NaN){
+      xboxSearch = 0;
+  }else{
+      xboxSearch = platformSnapshot.val().XboxOne; //ref("Genre/Roleplaying").val();
+
+  }
+  if(platformSnapshot.val().Playstation4 == null || undefined || NaN){
+      playstationSearch = 0;
+  }else{
+      playstationSearch = platformSnapshot.val().Playstation4; //ref("Genre/Roleplaying").val();
+
+  }
+  if(platformSnapshot.val().NintendoSwitch == null || undefined || NaN){
+      switchSearch = 0;
+  }else{
+      switchSearch = platformSnapshot.val().NintendoSwitch; //ref("Genre/Roleplaying").val();
+
+  }
+  if(platformSnapshot.val().PC == null || undefined || NaN){
+      pcSearch = 0;
+  }else{
+      pcSearch = platformSnapshot.val().PC; //ref("Genre/Roleplaying").val();
+
+  }
+  });
+
+
+
+
+
+
+
+    //xboxSearch = snapshot.val().XboxOne; //ref("Platform/Xbox One").val();
+    //playstationSearch = snapshot.val().Playstation4; //ref("Platform/Playstation 4").val();
+    //switchSearch = snapshot.val().NintendoSwitch; //ref("Platform/Nintendo Switch").val();
+    //pcSearch = snapshot.val().pc; //ref("Platform/PC").val();
+
+
+
+
+
+
+
+
+
+});
+
+//
+$("body").on("click", ".gen", function(){
+  genreSelect = $(this).attr("value");
+  console.log(genreSelect)
+  });
+//
+$("body").on("click", ".plat", function(){
+  platformSelect = $(this).attr("value");
+  console.log(platformSelect)
+  });
+$("body").on("click", ".ages", function(){
+  ageSelect = $(this).attr("value");
+  console.log(ageSelect)
+  });
+
+$("body").on("click", "#search", function(){
+   
+  console.log(fightSearch);
+
+  switch (genreSelect) {
+      case "fighting":
+          fightSearch++
+          database.ref("SearchStats/Genre/Fighting").set(fightSearch);
+        break;
+      case "puzzles":
+          puzzleSearch++
+          database.ref("SearchStats/Genre/Puzzles").set(puzzleSearch);
+        break;
+      case "role-playing":
+         rpgSearch++
+         database.ref("SearchStats/Genre/Roleplaying").set(rpgSearch);
+        break;
+      case "sport":
+        sportsSearch++
+        database.ref("SearchStats/Genre/Sports").set(sportsSearch);
+        break;
+      case "adventure":
+          adventureSearch++
+          database.ref("SearchStats/Genre/Adventure").set(adventureSearch);
+        break;
+      case "arcade":
+        arcadeSearch++
+        database.ref("SearchStats/Genre/Arcade").set(arcadeSearch);
+        break;
+      default:
+          break;
+    }
+    switch (ageSelect) {
+      case "everyone":
+          eSearch++
+          database.ref("SearchStats/Ratings/Everyone").set(eSearch);
+        break;
+      case "teen":
+          tSearch++
+          database.ref("SearchStats/Ratings/Teen").set(tSearch);
+        break;
+      case "mature":
+         mSearch++
+         database.ref("SearchStats/Ratings/Mature").set(mSearch);
+        break;
+      case "adult":
+        aSearch++
+        database.ref("SearchStats/Ratings/Adult").set(aSearch);
+        break;
+      default:
+          break;
+    }
+    switch (platformSelect) {
+      case "nintendo-switch":
+          switchSearch++
+          database.ref("SearchStats/Platform/Nintendo Switch").set(switchSearch);
+        break;
+      case "pc":
+          pcSearch++
+          database.ref("SearchStats/Platform/PC").set(pcSearch);
+        break;
+      case "xboxOne":
+         xboxSearch++
+         database.ref("SearchStats/Platform/XboxOne").set(xboxSearch);
+        break;
+      case "playstation4":
+        playstationSearch++
+        database.ref("SearchStats/Platform/Playstation4").set(playstationSearch);
+        break;
+      default:
+          break;
+    }
 });

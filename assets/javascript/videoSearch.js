@@ -4,7 +4,7 @@ $(document).ready(function () {
   console.log("ready!");
 
   //firebase key configuration
-  var firebaseConfig = {
+ /* var firebaseConfig = {
     apiKey: "AIzaSyDProkYgdjY3rTaaca5u9VipRAeaPKJnjE",
     authDomain: "video-search-5c1ee.firebaseapp.com",
     databaseURL: "https://video-search-5c1ee.firebaseio.com",
@@ -17,7 +17,7 @@ $(document).ready(function () {
   console.log("firebase");
 
 
-});
+});*/
 
 
 //this needs to be set on the document not on body to work
@@ -123,13 +123,15 @@ $(document).on("click", "#search", function () {
       var cardFooter2 = $("<p>");
       cardFooter2.attr("class","card-text");
 
-      var cardGenre = $("<small>").text("genre");
-      cardGenre.attr("class", "text-light");
+      // var cardGenre = $("<small>").text("genre");
+      // cardGenre.attr("class", "text-light");
 
+      if (!(rating == undefined || rating == null)){
       var cardScore = $("<small>").text("Score: " + rating);
       cardScore.attr("class", "text-light");
+      }
 
-      cardFooter1.append(cardGenre);
+      // cardFooter1.append(cardGenre);
 
       cardFooter2.append(cardScore);
 
@@ -160,4 +162,4 @@ $(document).on("click", "#search", function () {
 
 
 
-
+});
