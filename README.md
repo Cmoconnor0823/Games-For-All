@@ -1,10 +1,10 @@
 # Games-For-All!!!
 
 ## Description
-A simple app That allows the user to search the [ChickenCoop Api](https://rapidapi.com/valkiki/api/chicken-coop "ChickenCoop's Documentation") for videogame reccomendations
+A simple app That allows the user to search the [ChickenCoop Api](https://rapidapi.com/valkiki/api/chicken-coop "ChickenCoop's Documentation") for video game reccomendations based off of several User's selections.
 
 ## Set up
-In order to run this application you will need to follow the steps below: ** or visit [This link](https://cmoconnor0823.github.io/Group-Project-One/ "https://cmoconnor0823.github.io/Group-Project-One/") will open the live page on GitHub's environment
+In order to run this application you will need to follow the steps below: ** or visit [This link](https://cmoconnor0823.github.io/Group-Project-One/ "https://cmoconnor0823.github.io/Group-Project-One/") will open the live page on GitHub's environment.
 
 clone into the repo using this link: https://github.com/Cmoconnor0823/Group-Project-One.git
 cd Group-Project_One
