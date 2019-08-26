@@ -1,19 +1,19 @@
 # Games-For-All!!!
 
-##Description
+## Description
 A simple app That allows the user to search the [ChickenCoop Api](https://rapidapi.com/valkiki/api/chicken-coop "ChickenCoop's Documentation") for videogame reccomendations
 
-##Set up
+## Set up
 In order to run this application you will need to follow the steps below: ** or visit [This link](https://cmoconnor0823.github.io/Group-Project-One/ "https://cmoconnor0823.github.io/Group-Project-One/") will open the live page on GitHub's environment
 
 clone into the repo using this link: https://github.com/Cmoconnor0823/Group-Project-One.git
 cd Group-Project_One
 
 
-##Application in Action
+## Application in Action
 When the application is loaded you will be taken to the home page. From here the User will be asked to input several options that will allow for a personalized search of the videogames in the Chicken Coop Database. Once the User has chosen an Age range, a  Console and a Genere and submitted their choices, 10 relavant videogames will return and display on the page in a card containing info about each game. Multiple searches will also display information on the page.
 
-##Technology
+## Technology
 This page was built with the following technologies:
 
 [Git Bash]
@@ -30,9 +30,9 @@ This page was built with the following technologies:
 
 [Firebase](https://firebase.google.com/)
 
-##Features To Come:
+## Features To Come:
 
 Currently all searches are stored in a firebase database to be later used to trach search trends and other user information about the site.
 
-###For comments/ concerns contact the project Authors: Ruben Valdez, Jonathan Wells, Marco Pipes and Caitlin O'Connor
-####At: Ourtablebootcamp@gmail.com
+### For comments/ concerns contact the project Authors: Ruben Valdez, Jonathan Wells, Marco Pipes and Caitlin O'Connor
+#### At: Ourtablebootcamp@gmail.com
