@@ -16,19 +16,19 @@ When the application is loaded you will be taken to the home page. From here the
 ## Technology
 This page was built with the following technologies:
 
-[Git Bash]
+**[Git Bash]
 
-[Visual Studio Code](https://code.visualstudio.com/)
+**[Visual Studio Code](https://code.visualstudio.com/)
 
-[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+**[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-[BootStrap](https://getbootstrap.com/)
+**[BootStrap](https://getbootstrap.com/)
 
-[Css](https://developer.mozilla.org/en-US/docs/Web/CSS#targetText=Cascading%20Style%20Sheets%20(CSS)%20is,speech%2C%20or%20on%20other%20media.)
+**[Css](https://developer.mozilla.org/en-US/docs/Web/CSS#targetText=Cascading%20Style%20Sheets%20(CSS)%20is,speech%2C%20or%20on%20other%20media.)
 
-[Sass](https://sass-lang.com/)
+**[Sass](https://sass-lang.com/)
 
-[Firebase](https://firebase.google.com/)
+**[Firebase](https://firebase.google.com/)
 
 ## Features To Come:
 
