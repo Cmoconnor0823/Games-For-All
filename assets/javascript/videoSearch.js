@@ -102,7 +102,8 @@ $(document).on("click", "#search", function () {
 
     var cardDiv = $("<div>");
       cardDiv.addClass("card bg-secondary border-danger text-white m-3 p-1");
-      cardDiv.attr("style","min-width: 15rem;")
+      //cardDiv.attr("style","min-width: 15rem;");
+      cardDiv.attr("style","posistion: relative;")
 
       var cardImage = $("<img>");
       cardImage.attr("class","card-image-top");
@@ -111,6 +112,7 @@ $(document).on("click", "#search", function () {
 
       var cardBody = $("<div>");
       cardBody.attr("class","card-body");
+      
 
       var cardTitle = $("<h5>").text(name);
       cardTitle.attr("class","card-title");
