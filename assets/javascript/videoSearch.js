@@ -26,7 +26,7 @@ $(document).on("click", "#search", function () {
   console.log(platformValue)
   console.log(ratingValue)
   console.log(genreValue)
-
+ $("#card-deck").empty()
 //Query Friendly Button Values
   //   platform:
   // 	xbox one: 145
