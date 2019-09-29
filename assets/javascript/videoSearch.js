@@ -102,6 +102,7 @@ $(document).on("click", "#search", function () {
 
     var cardDiv = $("<div>");
       cardDiv.addClass("card bg-secondary border-danger text-white m-3 p-1");
+      cardDiv.attr("style","min-width: 15rem;")
 
       var cardImage = $("<img>");
       cardImage.attr("class","card-image-top");
@@ -113,15 +114,19 @@ $(document).on("click", "#search", function () {
 
       var cardTitle = $("<h5>").text(name);
       cardTitle.attr("class","card-title");
+      cardTitle.attr("style","word-wrap: break-word");
 
       var cardDescribe = $("<p>").html(description);
-      cardDescribe.attr("class","card-text");
+      cardDescribe.attr("class","card-text overflow-auto");
+      cardDescribe.attr("style","word-wrap: break-word");
 
       var cardFooter1 = $("<p>");
-      cardFooter1.attr("class","card-text");
+      cardFooter1.attr("class","card-text overflow-auto");
+      cardFooter1.attr("style","word-wrap: break-word");
 
       var cardFooter2 = $("<p>");
-      cardFooter2.attr("class","card-text");
+      cardFooter2.attr("class","card-text overflow-auto");
+      cardFooter2.attr("style","word-wrap: break-word");
 
       // var cardGenre = $("<small>").text("genre");
       // cardGenre.attr("class", "text-light");
