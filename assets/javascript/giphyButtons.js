@@ -76,8 +76,6 @@ $(document).on("click", "#pc", function () {
     console.log(searchFor);
     $("#platform").hide();
 
-
-
 });
 
 
@@ -1158,24 +1156,10 @@ database.ref("SearchStats").on("value", function(snapshot){
   }
   });
 
-
-
-
-
-
-
     //xboxSearch = snapshot.val().XboxOne; //ref("Platform/Xbox One").val();
     //playstationSearch = snapshot.val().Playstation4; //ref("Platform/Playstation 4").val();
     //switchSearch = snapshot.val().NintendoSwitch; //ref("Platform/Nintendo Switch").val();
     //pcSearch = snapshot.val().pc; //ref("Platform/PC").val();
-
-
-
-
-
-
-
-
 
 });
 
