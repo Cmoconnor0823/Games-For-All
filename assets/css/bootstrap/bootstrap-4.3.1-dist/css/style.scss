@@ -6,6 +6,12 @@ $mycolors:(
     dark:#0D0D0D,
 );
 
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
+
 body, html {
     height: 100%;
     
@@ -43,12 +49,18 @@ body{
     border-color: #F2F2F2;
     border-radius: 50px;
 
+    .card-deck, .card-wrapper{
+      margin:auto;
+      padding:auto;
+      width:100%;
+    }
     #gifs-appear-here{
         img{
-            width: 50%;
+            width:50%;
         }
     }
 }
+
 #menu{
     z-index: 1;
     position: relative;
@@ -64,20 +76,25 @@ img{
     width: 80%;
 }
 
+@include media-breakpoint-up(sm) {
+    .btn-group {
+      display: block;
+    }
+  }
 
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
+
+
 
 .card-columns {
    @include media-breakpoint-only(xl) {
-     column-count: 3;
+     column-count: 2;
   }
   @include media-breakpoint-only(lg) {
     column-count: 3;
   }
   @include media-breakpoint-only(md) {
-    column-count: 1;
+    column-count: 2;
   }
   @include media-breakpoint-only(sm) {
     column-count: 1;

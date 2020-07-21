@@ -3,7 +3,6 @@ var genreValue= "";
 var ratingValue="";
 
 $(document).ready(function () {
-    var userQuery = [];
     console.log("really ready!");
 
 });
@@ -76,8 +75,6 @@ $(document).on("click", "#pc", function () {
     searchFor.push($("#pc").text());
     console.log(searchFor);
     $("#platform").hide();
-
-
 
 });
 
@@ -464,6 +461,7 @@ $(document).on("click", "#mature", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var matureImage = $("<img>");
 
@@ -675,6 +673,7 @@ $(document).on("click", "#puzzles", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var puzzleImage = $("<img>");
 
@@ -746,6 +745,7 @@ $(document).on("click", "#rolePlaying", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var roleImage = $("<img>");
 
@@ -814,6 +814,7 @@ $(document).on("click", "#sport", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var sportsImage = $("<img>");
 
@@ -884,6 +885,7 @@ $(document).on("click", "#adventure", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var adventureImage = $("<img>");
 
@@ -955,6 +957,7 @@ $(document).on("click", "#arcade", function () {
             var results = response.data;
 
             var gifDiv = $("<div>");
+            gifDiv.attr("class","card-body");
             // Creating an image tag
             var arcadeImage = $("<img>");
 
@@ -1153,24 +1156,10 @@ database.ref("SearchStats").on("value", function(snapshot){
   }
   });
 
-
-
-
-
-
-
     //xboxSearch = snapshot.val().XboxOne; //ref("Platform/Xbox One").val();
     //playstationSearch = snapshot.val().Playstation4; //ref("Platform/Playstation 4").val();
     //switchSearch = snapshot.val().NintendoSwitch; //ref("Platform/Nintendo Switch").val();
     //pcSearch = snapshot.val().pc; //ref("Platform/PC").val();
-
-
-
-
-
-
-
-
 
 });
 
