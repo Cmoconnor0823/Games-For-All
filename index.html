@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
     <!--Please anyone who knows which scripts are needed comment in a name for them-->
     <!--Css Reset Page-->
@@ -66,24 +66,26 @@
 
 <body>
     <div class="container">
+
         <section id="headBar">
             <header id="headBar" class="container">
                 <div class="row">
                     <div class="jumbotron mainBox bg-secondary text-white m-3 p-2 col col-lg-12 text-center ">
                         <div>
                             <h1> Videogame Search Engine</h1>
-                            <h3> Use this site to get a customized video game recomendation</h3>
+                            <h3> Use this site to get a customized video game recommendation</h3>
                         </div>
             </header>
         </section>
+
         <section id="gif" class="container">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="card-deck">
+                <div class="row ">
+                    <div class="card-deck justify-content-center">
                         <div class="card bg-secondary border-danger text-white m-3 p-1 col col-lg-9"
                             id="placeholderForGif">
                             <div class="card-body m-3 p-1">
-                                <p>Click to play a gif showing what your searching for!</p>
+                                <p>After starting a search below, Gifs will appear to remind you of what Age Range, Platform, and Genre you are searching for. Click each gif to start it!</p>
                                 <div id="gifs-appear-here"></div>
                             </div>
                         </div>
@@ -93,13 +95,13 @@
         </section>
         <section id="menu" class="container">
             <div class="container">
-                <div class="row justify-content-center">
+                <div class="row card-wrapper justify-content-center">
                     <div class="card bg-secondary border-danger m-3 p-1 col col-lg-10" id="placeholderForDropDownMenu">
                         <div class="card-header text-white">Use the drop-down menu choices to get a game recommendation
                         </div>
                         <div class="card-body text-white">
                             <div class="btn-group">
-                                <button id="ageRange" class="btn btn-secondary btn-lg dropdown-toggle" type="button"
+                                <button id="ageRange" class="btn btn-secondary btn-lg m-1 dropdown-toggle" type="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     For Age Ranges
                                 </button>
@@ -113,49 +115,40 @@
                                     <button id="adult" class="dropdown-item ages" type="button" value="adult-only">Adult
                                         Only</button>
                                 </div>
-                                <div class="btn-group">
-                                    <button id="platform" class="btn btn-secondary btn-lg dropdown-toggle" type="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Platform
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <button id="pc" class="dropdown-item plat" type="button" value="pc">PC</button>
-                                        <button id="nintendoSwitch" class="dropdown-item plat" type="button"
-                                            value="nintendo-switch">Nintendo Switch</button>
-                                        <button id="playstation4" class="dropdown-item plat" type="button"
-                                            value="playstation4">Playstation 4</button>
-                                        <button id="xboxOne" class="dropdown-item plat" type="button"
-                                            value="xbox-one">Xbox
-                                            One</button>
-                                    </div>
-                                    <div class="btn-group">
-                                        <button id="genre" class="btn btn-secondary btn-lg dropdown-toggle"
-                                            type="button" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            Genres
-                                        </button>
-                                        <div class="dropdown-menu" id="genreValue">
-                                            <button id="fighting" class="dropdown-item gen" type="button"
-                                                value="fighting">Fighting</button>
-                                            <button id="puzzles" class="dropdown-item gen" type="button"
-                                                value="puzzles">Puzzles</button>
-                                            <button id="rolePlaying" class="dropdown-item gen" type="button"
-                                                value="role-playing">Role
-                                                Playing</button>
-                                            <button id="sport" class="dropdown-item gen" type="button"
-                                                value="sport">Sport</button>
-                                            <button id="adventure" class="dropdown-item gen" type="button"
-                                                value="adventure">Adventure</button>
-                                            <button id="arcade" class="dropdown-item gen" type="button"
-                                                value="arcade">Arcade</button>
-                                        </div>
-                                        <button id="search"
-                                            class="text-white bg-secondary border-danger m-3 p-1">Search
-                                        </button>
-                                    </div>
-
-
+                                <button id="platform" class="btn btn-secondary btn-lg m-1 dropdown-toggle" type="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Platform
+                                </button>
+                                <div class="dropdown-menu">
+                                    <button id="pc" class="dropdown-item plat" type="button" value="pc">PC</button>
+                                    <button id="nintendoSwitch" class="dropdown-item plat" type="button"
+                                        value="nintendo-switch">Nintendo Switch</button>
+                                    <button id="playstation4" class="dropdown-item plat" type="button"
+                                        value="playstation4">Playstation 4</button>
+                                    <button id="xboxOne" class="dropdown-item plat" type="button" value="xbox-one">Xbox
+                                        One</button>
                                 </div>
+                                <button id="genre" class="btn btn-secondary btn-lg m-1 dropdown-toggle" type="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Genres
+                                </button>
+                                <div class="dropdown-menu" id="genreValue">
+                                    <button id="fighting" class="dropdown-item gen" type="button"
+                                        value="fighting">Fighting</button>
+                                    <button id="puzzles" class="dropdown-item gen" type="button"
+                                        value="puzzles">Puzzles</button>
+                                    <button id="rolePlaying" class="dropdown-item gen" type="button"
+                                        value="role-playing">Role
+                                        Playing</button>
+                                    <button id="sport" class="dropdown-item gen" type="button"
+                                        value="sport">Sport</button>
+                                    <button id="adventure" class="dropdown-item gen" type="button"
+                                        value="adventure">Adventure</button>
+                                    <button id="arcade" class="dropdown-item gen" type="button"
+                                        value="arcade">Arcade</button>
+                                </div>
+                                <button id="search" class="text-white bg-secondary border-danger m-3 p-1">Search
+                                </button>
                             </div>
                         </div>
                     </div>

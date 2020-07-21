@@ -6,6 +6,12 @@ $mycolors:(
     dark:#0D0D0D,
 );
 
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
+
 body, html {
     height: 100%;
     
@@ -43,11 +49,14 @@ body{
     border-color: #F2F2F2;
     border-radius: 50px;
 
+    .card-deck, .card-wrapper{
+      margin:auto;
+      padding:auto;
+      width:100%;
+    }
     #gifs-appear-here{
         img{
-
             width:50%;
-
         }
     }
 }
@@ -74,9 +83,7 @@ img{
   }
 
 
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
 
 
 .card-columns {
