@@ -1,7 +1,7 @@
 # Games-For-All!!!
 
 ## Description
-An app That allows the user to search the [ChickenCoop Api](https://rapidapi.com/valkiki/api/chicken-coop "ChickenCoop's Documentation") for video game recommendations based off of several User's selections.
+An app That allows the user to search the [GiantBomb Api](https://rapidapi.com/valkiki/api/chicken-coop "ChickenCoop's Documentation") for video game recommendations based off of several User's selections.
 
 ## Set up
 In order to run this application you will need to follow the steps below: ** or visit [This link](https://cmoconnor0823.github.io/Group-Project-One/ "https://cmoconnor0823.github.io/Group-Project-One/") will open the live page on GitHub's environment.
@@ -11,7 +11,7 @@ cd Group-Project_One
 
 
 ## Application in Action
-When the application is loaded you will be taken to the home page. From here the User will be asked to input several options that will allow for a personalized search of the videogames in the Chicken Coop Database. Once the User has chosen an Age range, a  Console and a Genere and submitted their choices, 10 relavant videogames will return and display on the page in a card containing info about each game. Multiple searches will also display information on the page.
+When the application is loaded you will be taken to the home page. From here the User will be asked to input several options that will allow for a personalized search of the videogames in the Giant Bomb Database. Once the User has chosen an Age range, a  Console and a Genere and submitted their choices, 10 relavant videogames will return and display on the page in a card containing info about each game. Multiple searches will also display information on the page.
 
 ## Technology
 This page was built with the following technologies:
