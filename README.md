@@ -1,7 +1,7 @@
 # Games-For-All!!!
 
 ## Description
-An app That allows the user to search the [GiantBomb Api](https://rapidapi.com/valkiki/api/chicken-coop "ChickenCoop's Documentation") for video game recommendations based off of several User's selections.
+An app That allows the user to search the [GiantBomb Api](https://www.giantbomb.com/api/ "GiantBomb's Documentation") for video game recommendations based off of several User's selections.
 
 ## Set up
 In order to run this application you will need to follow the steps below: ** or visit [This link](https://cmoconnor0823.github.io/Group-Project-One/ "https://cmoconnor0823.github.io/Group-Project-One/") will open the live page on GitHub's environment.
